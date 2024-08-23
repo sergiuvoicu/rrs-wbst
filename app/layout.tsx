@@ -1,8 +1,26 @@
+// Styles
+import "./globals.scss";
+
 // Utilities
 import type { Metadata } from "next";
+import { Montserrat, Bitter } from "next/font/google";
 
 // Components
 import Header from "@/components/header/header";
+
+const montserrat = Montserrat({
+   weight: "800",
+   subsets: ["latin"],
+   variable: "--montserrat-font-family",
+   display: "swap",
+});
+
+const bitter = Bitter({
+   weight: "500",
+   variable: "--bitter-font-family",
+   subsets: ["latin"],
+   display: "swap",
+});
 
 export const metadata: Metadata = {
    title: "Re:rise",
@@ -15,7 +33,7 @@ export default function RootLayout({
    children: React.ReactNode;
 }>) {
    return (
-      <html lang="en">
+      <html lang="ro" className={`${montserrat.variable} ${bitter.variable}`}>
          <body>
             <Header />
             {children}
