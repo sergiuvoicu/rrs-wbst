@@ -1,0 +1,26 @@
+.title {
+   font-family: var(--montserrat-font-family);
+   color: var(--black);
+}
+
+.large {
+   font-size: 48px;
+   line-height: 50px;
+}
+
+.small {
+   font-size: 36px;
+   line-height: 38px;
+}
+
+@media only screen and (max-width: 700px) {
+   .large {
+      font-size: 36px;
+      line-height: 35px;
+   }
+
+   .small {
+      font-size: 24px;
+      line-height: 26px;
+   }
+}
