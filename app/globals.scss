@@ -1,8 +1,21 @@
+:root {
+   --primary-orange: rgb(244, 169, 46);
+   --secondary-orange: rgb(249, 193, 63);
+   --tertiary-orange: rgb(239, 148, 26);
+   --active-state-orange: rgb(198, 116, 9);
+   --primary-white: rgb(255, 255, 255);
+   --secondary-white: rgb(246, 246, 244);
+   --tertiary-white: rgb(230, 230, 230);
+   --active-state-white: rgb(200, 200, 200);
+   --black: rgb(24, 24, 24);
+}
+
 html {
    font-family: var(--bitter-font-family);
 }
 
 body {
+   background-color: #ffffff;
    margin: 0px;
    padding: 0px;
    overflow-x: hidden;
