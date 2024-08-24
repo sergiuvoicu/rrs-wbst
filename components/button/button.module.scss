@@ -4,6 +4,9 @@
    margin: 0px;
    border: none;
    cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
    * {
       transition: 100ms ease-in-out;

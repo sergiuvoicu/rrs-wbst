@@ -7,6 +7,7 @@ import { Montserrat, Bitter } from "next/font/google";
 
 // Components
 import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 const montserrat = Montserrat({
    weight: "800",
@@ -37,6 +38,7 @@ export default function RootLayout({
          <body>
             <Header />
             {children}
+            <Footer />
          </body>
       </html>
    );
