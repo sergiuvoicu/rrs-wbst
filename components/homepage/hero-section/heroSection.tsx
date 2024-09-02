@@ -65,7 +65,6 @@ export default function HeroSection() {
             src={backgroundImage}
             alt=""
             className={styles.backgroundImage}
-            unoptimized
          />
          <div className={styles.band}>
             <Title size="small">Fii pregătit în caz de cutremur!</Title>
