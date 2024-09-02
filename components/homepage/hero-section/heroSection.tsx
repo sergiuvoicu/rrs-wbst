@@ -14,6 +14,10 @@ import Image from "next/image";
 import Title from "@/components/title/title";
 import Paragraph from "@/components/paragraph/paragraph";
 import Button from "@/components/button/button";
+import Link from "next/link";
+
+// Utilities
+import { socials } from "@/utilities/socials";
 
 export default function HeroSection() {
    return (
@@ -33,18 +37,26 @@ export default function HeroSection() {
                </Button>
                <Paragraph>Și urmărește-ne pe ►</Paragraph>
                <div>
-                  <Button size="small" type="primary">
-                     <Image src={instagram} alt=""></Image>
-                  </Button>
-                  <Button size="small" type="primary">
-                     <Image src={email} alt=""></Image>
-                  </Button>
-                  <Button size="small" type="primary">
-                     <Image src={linkedin} alt=""></Image>
-                  </Button>
-                  <Button size="small" type="primary">
-                     <Image src={facebook} alt=""></Image>
-                  </Button>
+                  <Link href={`mailto:${socials.email}`}>
+                     <Button size="small" type="primary">
+                        <Image src={email} alt=""></Image>
+                     </Button>
+                  </Link>
+                  <Link href={socials.instagram} target="_blank">
+                     <Button size="small" type="primary">
+                        <Image src={instagram} alt=""></Image>
+                     </Button>
+                  </Link>
+                  <Link href={socials.linkedin} target="_blank">
+                     <Button size="small" type="primary">
+                        <Image src={linkedin} alt=""></Image>
+                     </Button>
+                  </Link>
+                  <Link href={socials.facebook} target="_blank">
+                     <Button size="small" type="primary">
+                        <Image src={facebook} alt=""></Image>
+                     </Button>
+                  </Link>
                </div>
             </div>
          </div>
@@ -53,6 +65,7 @@ export default function HeroSection() {
             src={backgroundImage}
             alt=""
             className={styles.backgroundImage}
+            unoptimized
          />
          <div className={styles.band}>
             <Title size="small">Fii pregătit în caz de cutremur!</Title>

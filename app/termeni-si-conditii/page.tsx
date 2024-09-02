@@ -1,7 +1,7 @@
 // Components
 import PageTitle from "@/components/pageTitle/pageTitle";
 
-export default () => {
+export default function TermeniSiConditii() {
    return (
       <div>
          <PageTitle
@@ -10,4 +10,4 @@ export default () => {
          />
       </div>
    );
-};
+}

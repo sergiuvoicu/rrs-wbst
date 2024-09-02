@@ -2,7 +2,7 @@ import Button from "@/components/button/button";
 import Paragraph from "@/components/paragraph/paragraph";
 import Title from "@/components/title/title";
 
-export default () => {
+export default function Dev() {
    return (
       <>
          <Button type="primary" size="small">
@@ -47,4 +47,4 @@ export default () => {
          </Paragraph>
       </>
    );
-};
+}
