@@ -1,0 +1,40 @@
+.wrapper {
+   width: 1000px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+   > p {
+      text-align: center;
+      margin: 10px 0px 45px 0px;
+   }
+
+   > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 60px;
+   }
+}
+
+@media only screen and (max-width: 1150px) {
+   .wrapper {
+      width: 90vw;
+
+      > div {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+      }
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .wrapper {
+      width: 90vw;
+
+      > div {
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+   }
+}

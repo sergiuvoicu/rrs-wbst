@@ -1,7 +1,9 @@
 import Button from "@/components/button/button";
+import Member from "@/components/member/member";
 import Paragraph from "@/components/paragraph/paragraph";
 import Title from "@/components/title/title";
 
+import { members } from "@/utilities/members";
 export default function Dev() {
    return (
       <>
@@ -45,6 +47,33 @@ export default function Dev() {
             tehnologice, financiare, administrative și umane aflate la
             dispoziție.
          </Paragraph>
+
+         {members.map((member) => {
+            return (
+               <>
+                  <Member
+                     name={member.name}
+                     image={member.image}
+                     description={member.description}
+                     email={member.email}
+                     instagramLink={member.instagramLink}
+                     facebookLink={member.facebookLink}
+                     linkedinLink={member.linkedinLink}
+                     detailed={true}
+                  />
+                  <Member
+                     name={member.name}
+                     image={member.image}
+                     description={member.description}
+                     email={member.email}
+                     instagramLink={member.instagramLink}
+                     facebookLink={member.facebookLink}
+                     linkedinLink={member.linkedinLink}
+                     detailed={false}
+                  />
+               </>
+            );
+         })}
       </>
    );
 }
