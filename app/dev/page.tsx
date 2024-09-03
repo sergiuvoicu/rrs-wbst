@@ -1,4 +1,5 @@
 import Button from "@/components/button/button";
+import ImplicateSection from "@/components/implica-te-section/implicateSection";
 import Member from "@/components/member/member";
 import Paragraph from "@/components/paragraph/paragraph";
 import Title from "@/components/title/title";
@@ -47,7 +48,6 @@ export default function Dev() {
             tehnologice, financiare, administrative și umane aflate la
             dispoziție.
          </Paragraph>
-
          {members.map((member) => {
             return (
                <>
@@ -74,6 +74,7 @@ export default function Dev() {
                </>
             );
          })}
+         <ImplicateSection />;
       </>
    );
 }
