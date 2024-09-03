@@ -26,6 +26,7 @@ export default function CineSuntem() {
             {members.slice(0, 4).map((member) => {
                return (
                   <Member
+                     key={member.name}
                      name={member.name}
                      image={member.image}
                      description={member.description}

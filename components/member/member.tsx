@@ -30,25 +30,40 @@ export default function Member(props: IMember & { detailed: boolean }) {
             <Paragraph>{props.name}</Paragraph>
             {props.detailed && <Paragraph>{props.description}</Paragraph>}
             <div>
-               <Link href={socials.linkedin} target="_blank">
+               <Link
+                  href={socials.linkedin}
+                  target="_blank"
+                  aria-label="link către profilul de linkedin al membrului"
+               >
                   <Button size="small" type="primary">
-                     <Image src={linkedin} alt=""></Image>
+                     <Image src={linkedin} alt="linkedin" />
                   </Button>
                </Link>
-               <Link href={`mailto:${socials.email}`}>
+               <Link
+                  href={`mailto:${socials.email}`}
+                  aria-label="email-ul membrului"
+               >
                   <Button size="small" type="primary">
-                     <Image src={email} alt=""></Image>
+                     <Image src={email} alt="email" />
                   </Button>
                </Link>
-               <Link href={socials.instagram} target="_blank">
+               <Link
+                  href={socials.instagram}
+                  target="_blank"
+                  aria-label="link către profilul de instagram al membrului"
+               >
                   <Button size="small" type="primary">
-                     <Image src={instagram} alt=""></Image>
+                     <Image src={instagram} alt="instagram" />
                   </Button>
                </Link>
 
-               <Link href={socials.facebook} target="_blank">
+               <Link
+                  href={socials.facebook}
+                  target="_blank"
+                  aria-label="link către profilul de facebook al membrului"
+               >
                   <Button size="small" type="primary">
-                     <Image src={facebook} alt=""></Image>
+                     <Image src={facebook} alt="facebook" />
                   </Button>
                </Link>
             </div>

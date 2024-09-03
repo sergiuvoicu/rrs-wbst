@@ -22,39 +22,63 @@ export default function ImplicateSection() {
       <div className={styles.container}>
          <div className={styles.wrapper}>
             <div className={styles.left}>
-               <Image src={animation} alt="sad"></Image>
-               <Link href={pages.implicaTe}>
+               <Image src={animation} alt="animatie" />
+               <Link
+                  href={pages.implicaTe}
+                  aria-label="link către pagina implică-te"
+               >
                   <Button size="medium" type="primary">
                      <Paragraph>Implică-te!</Paragraph>
                   </Button>
                </Link>
             </div>
             <div className={styles.right}>
-               <Link href={pages.implicaTe}>
+               <Link
+                  href={pages.implicaTe}
+                  aria-label="link către pagina implică-te, secțiunea devino voluntar!"
+               >
                   <h3>Devino voluntar!</h3>
                </Link>
-               <Link href={pages.implicaTe}>
+               <Link
+                  href={pages.implicaTe}
+                  aria-label="link către pagina implică-te, secțiunea donează!"
+               >
                   <h3>Donează!</h3>
                </Link>
-               <Link href={pages.implicaTe}>
+               <Link
+                  href={pages.implicaTe}
+                  aria-label="link către pagina implică-te, secțiunea redirecționează!"
+               >
                   <h3>Redirecționează!</h3>
                </Link>
                <Paragraph>Și, urmărește-ne pe social media!</Paragraph>
                <div>
-                  <Link href={socials.linkedin} target="_blank">
+                  <Link
+                     href={socials.linkedin}
+                     target="_blank"
+                     aria-label="link către pagina de linkedin"
+                  >
                      <Button size="small" type="secondary">
-                        <Image src={linkedin} alt=""></Image>
+                        <Image src={linkedin} alt="linkedin" />
                      </Button>
                   </Link>
-                  <Link href={socials.instagram} target="_blank">
+                  <Link
+                     href={socials.instagram}
+                     target="_blank"
+                     aria-label="link către pagina de instagram"
+                  >
                      <Button size="small" type="secondary">
-                        <Image src={instagram} alt=""></Image>
+                        <Image src={instagram} alt="instagram" />
                      </Button>
                   </Link>
 
-                  <Link href={socials.facebook} target="_blank">
+                  <Link
+                     href={socials.facebook}
+                     target="_blank"
+                     aria-label="link către pagina de facebook"
+                  >
                      <Button size="small" type="secondary">
-                        <Image src={facebook} alt=""></Image>
+                        <Image src={facebook} alt="facebook" />
                      </Button>
                   </Link>
                </div>

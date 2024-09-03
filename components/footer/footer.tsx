@@ -23,35 +23,32 @@ export default function Footer() {
    return (
       <footer className={styles.footer}>
          <Link href={pages.acasa} aria-label="link către pagina principală">
-            <Image
-               src={logo}
-               alt="logo-ul organizației non-guvernamentale Re:Rise"
-            />
+            <Image src={logo} alt="logo" />
          </Link>
          <div>
             <div className={styles.links}>
                <Title size="small">Navighează mai ușor!</Title>
                <Link
                   href={pages.cineSuntem}
-                  aria-label={`link către pagina "cine suntem?"`}
+                  aria-label="link către pagina cine suntem"
                >
                   <Paragraph>Cine suntem?</Paragraph>
                </Link>
                <Link
                   href={pages.ceFacem}
-                  aria-label={`link către pagina "ce facem?"`}
+                  aria-label="link către pagina ce facem"
                >
                   <Paragraph>Ce facem?</Paragraph>
                </Link>
                <Link
                   href={pages.implicaTe}
-                  aria-label={`link către pagina "implică-te!"`}
+                  aria-label="link către pagina implică-te"
                >
                   <Paragraph>Implică-te!</Paragraph>
                </Link>
                <Link
                   href={pages.contact}
-                  aria-label={`link către pagina "contact"`}
+                  aria-label="link către pagina contact"
                >
                   <Paragraph>Contact</Paragraph>
                </Link>
@@ -60,7 +57,7 @@ export default function Footer() {
                <Title size="small">Unde ne găsești?</Title>
                <Link
                   href={`mailto:${socials.email}`}
-                  aria-label="email-ul oficial al organizației non-guvernamentale Re:Rise"
+                  aria-label="email de contact"
                >
                   <Button size="small" type="secondary">
                      <Image src={email} alt="email" />
@@ -70,30 +67,30 @@ export default function Footer() {
                <Link
                   href={socials.instagram}
                   target="_blank"
-                  aria-label="pagina oficială de instagram a organizației non-guvernamentale Re:Rise"
+                  aria-label="link către pagina de instagram"
                >
                   <Button size="small" type="secondary">
-                     <Image src={instagram} alt="logo instagram" />
+                     <Image src={instagram} alt="instagram" />
                   </Button>
                   <Paragraph>{socials.instagram.slice(12)}</Paragraph>
                </Link>
                <Link
                   href={socials.linkedin}
                   target="_blank"
-                  aria-label="pagina oficială de linkedin a organizației non-guvernamentale Re:Rise"
+                  aria-label="link către pagina de linkedin"
                >
                   <Button size="small" type="secondary">
-                     <Image src={linkedin} alt="logo linkedin" />
+                     <Image src={linkedin} alt="linkedin" />
                   </Button>
                   <Paragraph>{socials.linkedin.slice(12)}</Paragraph>
                </Link>
                <Link
                   href={socials.facebook}
                   target="_blank"
-                  aria-label="pagina oficială de facebook a organizației non-guvernamentale Re:Rise"
+                  aria-label="link către pagina de facebook"
                >
                   <Button size="small" type="secondary">
-                     <Image src={facebook} alt="logo facebook" />
+                     <Image src={facebook} alt="facebook" />
                   </Button>
                   <Paragraph>{socials.facebook.slice(12)}</Paragraph>
                </Link>
@@ -108,7 +105,7 @@ export default function Footer() {
             </Link>
             <Link
                href={pages.politicaDeConfidentialitate}
-               aria-label="link către termeni și condiții"
+               aria-label="link către politica de condifențialitate"
             >
                <Paragraph>Politica de confidențialitate</Paragraph>
             </Link>
@@ -117,7 +114,7 @@ export default function Footer() {
                website{" "}
                <Link
                   href={pages.dezvoltatori}
-                  aria-label={`link către pagina "dezvoltatorii"`}
+                  aria-label="link către pagina dedicată dezvoltatorilor site-ului"
                >
                   ► here
                </Link>
