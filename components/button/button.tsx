@@ -1,3 +1,5 @@
+"use client";
+
 // Styles
 import styles from "./button.module.scss";
 
@@ -6,6 +8,7 @@ interface ButtonProps {
    className?: string;
    size: "small" | "medium" | "large";
    type: "primary" | "secondary";
+   onClick?: () => void;
 }
 
 const buttonHeightsList = {
@@ -20,7 +23,8 @@ export default function Button(props: ButtonProps) {
    return (
       <button
          style={{ height: buttonHeight }}
-         className={`${styles.button} ${props} ${props.type == "primary" ? styles.primary : styles.secondary}`}
+         className={`${styles.button} ${props.className} ${props.type == "primary" ? styles.primary : styles.secondary}`}
+         onClick={props.onClick}
       >
          {props.children}
       </button>

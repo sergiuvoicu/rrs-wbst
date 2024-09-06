@@ -7,4 +7,5 @@ export const pages = {
    termeniSiConditii: "/termeni-si-conditii",
    politicaDeConfidentialitate: "/politica-de-confidentialitate",
    dezvoltatori: "/dezvoltatori",
+   proiect: "/proiect",
 };

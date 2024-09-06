@@ -7,6 +7,7 @@ import CineSuntem from "../components/homepage/cine-suntem/cineSuntem";
 import ImplicateSection from "@/components/implica-te-section/implicateSection";
 import Title from "@/components/title/title";
 import Paragraph from "@/components/paragraph/paragraph";
+import CeFacem from "../components/homepage/ce-facem/ceFacem";
 
 export default function Acasa() {
    return (
@@ -14,6 +15,7 @@ export default function Acasa() {
          <HeroSection />
          <div className={styles.content}>
             <CineSuntem />
+            <CeFacem />
             <Title size="small">Cum poti ajuta?</Title>
             <Paragraph>
                Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă
