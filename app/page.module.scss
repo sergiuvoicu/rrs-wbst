@@ -2,22 +2,4 @@
    display: flex;
    align-items: center;
    flex-direction: column;
-
-   > h1 {
-      margin-top: 130px;
-   }
-
-   > p {
-      margin-top: 20px;
-      width: 1000px;
-      text-align: center;
-   }
-}
-
-@media only screen and (max-width: 1100px) {
-   .content {
-      > p {
-         width: 90vw;
-      }
-   }
 }

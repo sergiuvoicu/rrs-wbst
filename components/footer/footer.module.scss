@@ -97,6 +97,10 @@ $footerLeftRightPadding: 100px;
       > div {
          flex-direction: column;
          gap: inherit;
+
+         div {
+            width: fit-content;
+         }
       }
    }
 }

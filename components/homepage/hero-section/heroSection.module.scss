@@ -293,3 +293,15 @@ $contentLeftMargin: 100px;
       }
    }
 }
+
+@media only screen and (max-width: 360px) {
+   .backgroundImage,
+   .exacavator {
+      display: none;
+   }
+   .wrapper {
+      .content {
+         height: calc(100vh - 40px - 20px);
+      }
+   }
+}
