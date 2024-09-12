@@ -36,7 +36,7 @@ export default function RootLayout({
    return (
       <html lang="ro" className={`${montserrat.variable} ${bitter.variable}`}>
          <body>
-            {/* <Header /> */}
+            <Header />
             {children}
             <Footer />
          </body>

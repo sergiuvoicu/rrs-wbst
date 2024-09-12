@@ -76,11 +76,7 @@ export default function HeroSection() {
             </div>
          </div>
          <Image src={excavator} alt="excavator" className={styles.exacavator} />
-         <Image
-            src={backgroundImage}
-            alt="imagine de fundal"
-            className={styles.backgroundImage}
-         />
+         <div className={styles.backgroundImage} />
          <div className={styles.band}>
             <Title size="small">Fii pregătit în caz de cutremur!</Title>
          </div>
