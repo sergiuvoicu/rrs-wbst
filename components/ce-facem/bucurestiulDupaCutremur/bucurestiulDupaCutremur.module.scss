@@ -1,0 +1,135 @@
+.container {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   height: 700px;
+   width: 100vw;
+   overflow: hidden;
+   position: relative;
+
+   > img {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      height: 600px;
+      width: auto;
+   }
+
+   > p {
+      margin-top: 10px;
+      a {
+         color: var(--tertiary-orange);
+         text-decoration: underline;
+      }
+   }
+
+   > a {
+      display: inline-block;
+      width: fit-content;
+      height: fit-content;
+   }
+
+   > a {
+      button {
+         padding: 0px 50px;
+         p {
+            color: white;
+         }
+      }
+   }
+
+   > * {
+      margin-left: 100px;
+      max-width: 800px;
+   }
+
+   ul {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      li {
+         list-style: none;
+         font-size: 15px;
+
+         &::before {
+            content: "►";
+            margin-right: 5px;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 1400px) {
+   .container {
+      > * {
+         max-width: 50vw;
+      }
+   }
+}
+
+@media only screen and (max-width: 1300px) {
+   .container {
+      > * {
+         margin-left: 50px;
+      }
+   }
+}
+
+@media only screen and (max-width: 1170px) {
+   .container {
+      justify-content: flex-start;
+      padding-top: 100px;
+      height: 900px;
+
+      > * {
+         max-width: calc(100vw - 150px);
+         margin-left: 50px;
+      }
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   .container {
+      height: 1000px;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   .container {
+      ul {
+         transform: translateX(-40px);
+      }
+
+      > * {
+         max-width: calc(100vw - 50px);
+         margin-left: 30px;
+      }
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .container {
+      > img {
+         width: 90vw;
+         height: auto;
+      }
+   }
+}
+
+@media only screen and (max-width: 540px) {
+   .container {
+      height: 900px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   .container {
+      height: 850px;
+   }
+}
+
+@media only screen and (max-width: 420px) {
+   .container {
+      height: 800px;
+   }
+}

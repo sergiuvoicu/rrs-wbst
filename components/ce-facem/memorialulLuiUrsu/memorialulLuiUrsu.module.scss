@@ -1,0 +1,62 @@
+.container {
+   height: 700px;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+   background-color: #fafaf9;
+
+   > img {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      width: 700px;
+      height: auto;
+      transform: translate(-50%, -35%);
+   }
+
+   > p {
+      text-align: center;
+      width: 800px;
+      line-height: 22px;
+      margin: 30px 0px 70px 0px;
+   }
+
+   button {
+      padding: 0px 50px;
+
+      p {
+         color: white;
+      }
+   }
+}
+
+@media only screen and (max-width: 970px) {
+   .container {
+      > img {
+         width: 500px;
+      }
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .container {
+      > img {
+         width: 500px;
+      }
+
+      > p {
+         width: 90vw;
+      }
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   .container {
+      > img {
+         width: 80vw;
+      }
+   }
+}
