@@ -6,8 +6,8 @@ import Title from "../title/title";
 import Paragraph from "../paragraph/paragraph";
 
 interface PageTitleProps {
-   title: string;
-   description: string;
+   title?: string;
+   description?: string;
    children?: React.ReactNode;
 }
 
