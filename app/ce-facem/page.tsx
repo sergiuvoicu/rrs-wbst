@@ -7,6 +7,14 @@ import BucurestiulDupaCutremur from "@/components/ce-facem/bucurestiulDupaCutrem
 import OrdinulCriminal from "@/components/ce-facem/ordinulCriminal/ordinulCriminal";
 import MemorialulLuiUrsu from "@/components/ce-facem/memorialulLuiUrsu/memorialulLuiUrsu";
 import Implicate from "@/components/homepage/implica-te/implicate";
+import Title from "@/components/title/title";
+import Image from "next/image";
+import Paragraph from "@/components/paragraph/paragraph";
+import Link from "next/link";
+import Button from "@/components/button/button";
+
+// Utilities
+import { projects } from "@/utilities/projects";
 
 export default function CeFacem() {
    return (
@@ -18,7 +26,30 @@ export default function CeFacem() {
          <BucurestiulDupaCutremur />
          <OrdinulCriminal />
          <MemorialulLuiUrsu />
-         <div className={styles.projects}></div>
+         <div className={styles.projects}>
+            <Title size="small">Plus multe altele!</Title>
+            <Paragraph>
+               Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă
+               nativ
+            </Paragraph>
+            <div>
+               {projects.map((project) => {
+                  return (
+                     <Link
+                        href={""}
+                        className={styles.project}
+                        key={project.id}
+                     >
+                        <Image src={project.image} alt="" />
+                        <h1>{project.name}</h1>
+                        <Button size="small" type="primary">
+                           <Paragraph>Află mai multe</Paragraph>
+                        </Button>
+                     </Link>
+                  );
+               })}
+            </div>
+         </div>
 
          <Implicate />
       </div>

@@ -5,12 +5,7 @@ import styles from "./cefacem.module.scss";
 
 // Assets
 import background from "../../../assets/heroSection.jpg";
-import one from "../../../assets/projects/1.webp";
-import doi from "../../../assets/projects/2.jpg";
-import trei from "../../../assets/projects/3.jpg";
-import patru from "../../../assets/projects/4.jpg";
-import cinci from "../../../assets/projects/5.webp";
-import sase from "../../../assets/projects/6.jpeg";
+
 import arrow from "../../../assets/arrow.png";
 
 // Components
@@ -23,72 +18,16 @@ import Link from "next/link";
 // Utilities
 import { pages } from "@/utilities/pages";
 import { useState } from "react";
+import { projects } from "@/utilities/projects";
 
 export default function CeFacem() {
-   interface IProject {
-      id: number;
-      name: string;
-      image: any;
-   }
-
-   const [projects, setProjects] = useState<IProject[]>([
-      {
-         id: 1,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: one,
-      },
-      {
-         id: 2,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: doi,
-      },
-      {
-         id: 3,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: trei,
-      },
-      {
-         id: 4,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: patru,
-      },
-      {
-         id: 5,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: cinci,
-      },
-      {
-         id: 6,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: sase,
-      },
-      {
-         id: 7,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: background,
-      },
-      {
-         id: 8,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: background,
-      },
-      {
-         id: 9,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: background,
-      },
-      {
-         id: 10,
-         name: "#ReDU - Registrul digital al utilajelor",
-         image: background,
-      },
-   ]);
+   const [projectsList, setProjects] = useState(projects);
 
    function nextSlide() {
       setProjects((prevProjects) =>
          prevProjects.map((project) => ({
             ...project,
-            id: (project.id + 1) % projects.length,
+            id: (project.id + 1) % projectsList.length,
          }))
       );
    }
@@ -97,7 +36,7 @@ export default function CeFacem() {
       setProjects((prevProjects) =>
          prevProjects.map((project) => ({
             ...project,
-            id: (project.id - 1 + projects.length) % projects.length,
+            id: (project.id - 1 + projectsList.length) % projectsList.length,
          }))
       );
    }
@@ -121,7 +60,7 @@ export default function CeFacem() {
             </Link>
          </div>
          <div className={styles.carousel}>
-            {projects.map((project) => {
+            {projectsList.map((project) => {
                return (
                   <div
                      key={project.name}
