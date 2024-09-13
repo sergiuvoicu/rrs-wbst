@@ -124,6 +124,7 @@ export default function CeFacem() {
             {projects.map((project) => {
                return (
                   <div
+                     key={project.name}
                      data-slide-position={project.id}
                      className={styles.slide}
                   >

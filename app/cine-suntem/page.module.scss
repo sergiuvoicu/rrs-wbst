@@ -1,0 +1,21 @@
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.members {
+   margin-top: 100px;
+   width: fit-content;
+   display: grid;
+   place-items: center;
+   grid-template-columns: min-content min-content;
+   gap: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
+   .members {
+      grid-template-columns: min-content;
+   }
+}
