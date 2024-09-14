@@ -21,7 +21,7 @@ import { useState } from "react";
 import { projects } from "@/utilities/projects";
 
 export default function CeFacem() {
-   const [projectsList, setProjects] = useState(projects);
+   const [projectsList, setProjects] = useState(projects.slice(0, 7));
 
    function nextSlide() {
       setProjects((prevProjects) =>
@@ -63,7 +63,7 @@ export default function CeFacem() {
             {projectsList.map((project) => {
                return (
                   <div
-                     key={project.name}
+                     key={project.id}
                      data-slide-position={project.id}
                      className={styles.slide}
                   >

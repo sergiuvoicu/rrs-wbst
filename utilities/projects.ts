@@ -58,7 +58,17 @@ export const projects: IProject[] = [
       image: one,
    },
    {
-      id: 10,
+      id: 11,
+      name: "#ReDU - Registrul digital al utilajelor",
+      image: one,
+   },
+   {
+      id: 12,
+      name: "#ReDU - Registrul digital al utilajelor",
+      image: one,
+   },
+   {
+      id: 13,
       name: "#ReDU - Registrul digital al utilajelor",
       image: one,
    },
