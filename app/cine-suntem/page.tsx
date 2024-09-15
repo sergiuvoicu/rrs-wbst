@@ -20,6 +20,7 @@ export default function CineSuntem() {
             {Array.from(members).map((member) => {
                return (
                   <Member
+                     key={member.name}
                      name={member.name}
                      description={member.description}
                      image={member.image}

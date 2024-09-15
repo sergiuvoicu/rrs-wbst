@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/button/button";
 import ImplicateSection from "@/components/implica-te-section/implicateSection";
 import Member from "@/components/member/member";
@@ -6,6 +7,20 @@ import Title from "@/components/title/title";
 
 import { members } from "@/utilities/members";
 export default function Dev() {
+   async function makeApiCall() {
+      try {
+         const response = await fetch("../api/example", {
+            method: "POST",
+         });
+
+         if (!response.ok) {
+            throw new Error("Network response was not ok");
+         }
+      } catch (error) {
+         console.error("There was a problem with the fetch operation:", error);
+      }
+   }
+
    return (
       <>
          <Button type="primary" size="small">
@@ -74,6 +89,10 @@ export default function Dev() {
                </>
             );
          })}
+         <button onClick={makeApiCall}>
+            apasa aici ca sa faci rost de serverul ala pe care incerci sa il
+            faci haha
+         </button>
          <ImplicateSection />;
       </>
    );
