@@ -1,6 +1,8 @@
 "use client";
 import Button from "@/components/button/button";
+import FormSection from "@/components/formSection/formSection";
 import ImplicateSection from "@/components/implica-te-section/implicateSection";
+import Input from "@/components/input/input";
 import Member from "@/components/member/member";
 import Paragraph from "@/components/paragraph/paragraph";
 import Title from "@/components/title/title";
@@ -89,11 +91,14 @@ export default function Dev() {
                </>
             );
          })}
-         <button onClick={makeApiCall}>
-            apasa aici ca sa faci rost de serverul ala pe care incerci sa il
-            faci haha
-         </button>
-         <ImplicateSection />;
+         <form style={{ marginLeft: 100, marginTop: 50 }}>
+            <FormSection sectionName="Detalii generale">
+               <Input type="text" label="Nume de familie" />
+               <Input type="number" label="Nume" />
+               <Input type="checkbox" name="checkbox" label="sadfsa" />
+            </FormSection>
+         </form>
+         <ImplicateSection />
       </>
    );
 }
