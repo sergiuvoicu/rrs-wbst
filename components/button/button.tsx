@@ -3,13 +3,10 @@
 // Styles
 import styles from "./button.module.scss";
 
-interface ButtonProps {
-   children: React.ReactNode;
-   className?: string;
+type ButtonTypes = JSX.IntrinsicElements["button"] & {
    size: "small" | "medium" | "large";
-   type: "primary" | "secondary";
-   onClick?: () => void;
-}
+   model: "primary" | "secondary";
+};
 
 const buttonHeightsList = {
    small: 45,
@@ -17,13 +14,13 @@ const buttonHeightsList = {
    large: 75,
 };
 
-export default function Button(props: ButtonProps) {
+export default function Button(props: ButtonTypes) {
    const buttonHeight = buttonHeightsList[props.size];
 
    return (
       <button
          style={{ height: buttonHeight }}
-         className={`${styles.button} ${props.className} ${props.type == "primary" ? styles.primary : styles.secondary}`}
+         className={`${styles.button} ${props.className} ${props.model == "primary" ? styles.primary : styles.secondary}`}
          onClick={props.onClick}
       >
          {props.children}

@@ -54,7 +54,7 @@ export default function CeFacem() {
                între persoanele expuse riscului seismic și, pe de altă parte.
             </Paragraph>
             <Link href={pages.ceFacem} aria-label="link către pagina ce facem">
-               <Button size="small" type="primary">
+               <Button size="small" model="primary">
                   <Paragraph>Descoperă toate proiectele noastre!</Paragraph>
                </Button>
             </Link>
@@ -70,7 +70,7 @@ export default function CeFacem() {
                      <Image src={project.image} alt={project.name} />
                      <h1>{project.name}</h1>
                      <Link href={project.name}>
-                        <Button type="primary" size="small">
+                        <Button model="primary" size="small">
                            <Paragraph>Află mai multe!</Paragraph>
                         </Button>
                      </Link>
@@ -78,10 +78,10 @@ export default function CeFacem() {
                );
             })}
             <div className={styles.controls}>
-               <Button type="primary" size="small" onClick={prevSlide}>
+               <Button model="primary" size="small" onClick={prevSlide}>
                   <Image src={arrow} alt="sageata spre stanga"></Image>
                </Button>
-               <Button onClick={nextSlide} type="primary" size="small">
+               <Button onClick={nextSlide} model="primary" size="small">
                   <Image src={arrow} alt="sageata spre dreapta"></Image>
                </Button>
             </div>

@@ -40,7 +40,7 @@ export default function BucurestiulDupaCutremur() {
             </li>
          </ul>
          <Link href={""}>
-            <Button size="medium" type="primary">
+            <Button size="medium" model="primary">
                <Paragraph>Află mai multe!</Paragraph>
             </Button>
          </Link>

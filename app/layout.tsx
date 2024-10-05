@@ -2,6 +2,7 @@
 import "./globals.scss";
 
 // Utilities
+import React from "react";
 import type { Metadata } from "next";
 import { Montserrat, Bitter } from "next/font/google";
 

@@ -35,7 +35,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   target="_blank"
                   aria-label="link către profilul de linkedin al membrului"
                >
-                  <Button size="small" type="primary">
+                  <Button size="small" model="primary">
                      <Image src={linkedin} alt="linkedin" />
                   </Button>
                </Link>
@@ -43,7 +43,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   href={`mailto:${socials.email}`}
                   aria-label="email-ul membrului"
                >
-                  <Button size="small" type="primary">
+                  <Button size="small" model="primary">
                      <Image src={email} alt="email" />
                   </Button>
                </Link>
@@ -52,7 +52,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   target="_blank"
                   aria-label="link către profilul de instagram al membrului"
                >
-                  <Button size="small" type="primary">
+                  <Button size="small" model="primary">
                      <Image src={instagram} alt="instagram" />
                   </Button>
                </Link>
@@ -62,7 +62,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   target="_blank"
                   aria-label="link către profilul de facebook al membrului"
                >
-                  <Button size="small" type="primary">
+                  <Button size="small" model="primary">
                      <Image src={facebook} alt="facebook" />
                   </Button>
                </Link>

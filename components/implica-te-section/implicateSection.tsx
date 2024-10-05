@@ -27,7 +27,7 @@ export default function ImplicateSection() {
                   href={pages.implicaTe}
                   aria-label="link către pagina implică-te"
                >
-                  <Button size="medium" type="primary">
+                  <Button size="medium" model="primary">
                      <Paragraph>Implică-te!</Paragraph>
                   </Button>
                </Link>
@@ -58,7 +58,7 @@ export default function ImplicateSection() {
                      target="_blank"
                      aria-label="link către pagina de linkedin"
                   >
-                     <Button size="small" type="secondary">
+                     <Button size="small" model="secondary">
                         <Image src={linkedin} alt="linkedin" />
                      </Button>
                   </Link>
@@ -67,7 +67,7 @@ export default function ImplicateSection() {
                      target="_blank"
                      aria-label="link către pagina de instagram"
                   >
-                     <Button size="small" type="secondary">
+                     <Button size="small" model="secondary">
                         <Image src={instagram} alt="instagram" />
                      </Button>
                   </Link>
@@ -77,7 +77,7 @@ export default function ImplicateSection() {
                      target="_blank"
                      aria-label="link către pagina de facebook"
                   >
-                     <Button size="small" type="secondary">
+                     <Button size="small" model="secondary">
                         <Image src={facebook} alt="facebook" />
                      </Button>
                   </Link>

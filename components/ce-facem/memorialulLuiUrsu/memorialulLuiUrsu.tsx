@@ -34,7 +34,7 @@ export default function MemorialulLuiUrsu() {
             urmă, <b> ucis de securitate pe 17 noiembrie 1985. </b>
          </Paragraph>
          <Link href={""}>
-            <Button size="medium" type="primary">
+            <Button size="medium" model="primary">
                <Paragraph>Află mai multe</Paragraph>
             </Button>
          </Link>

@@ -106,7 +106,7 @@ export default function Header() {
                </Link>
                <Button
                   size="small"
-                  type={`${screenWidth < 660 ? "primary" : scrollPosition > 40 ? "secondary" : "primary"}`}
+                  model={`${screenWidth < 660 ? "primary" : scrollPosition > 40 ? "secondary" : "primary"}`}
                >
                   <Link
                      href={pages.implicaTe}

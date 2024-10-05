@@ -39,7 +39,7 @@ export default function Contact() {
             </Paragraph>
             <div>
                <Link href={`mailto:${socials.email}`} target="_blank">
-                  <Button size="large" type="primary">
+                  <Button size="large" model="primary">
                      <Image src={email} alt="" />
                   </Button>
                   <div>
@@ -47,7 +47,7 @@ export default function Contact() {
                   </div>
                </Link>
                <Link href={socials.linkedin} target="_blank">
-                  <Button size="large" type="primary">
+                  <Button size="large" model="primary">
                      <Image src={linkedin} alt="" />
                   </Button>
                   <div>
@@ -55,7 +55,7 @@ export default function Contact() {
                   </div>
                </Link>
                <Link href={socials.facebook} target="_blank">
-                  <Button size="large" type="primary">
+                  <Button size="large" model="primary">
                      <Image src={facebook} alt="" />
                   </Button>
                   <div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   </div>
                </Link>
                <Link href={socials.instagram} target="_blank">
-                  <Button size="large" type="primary">
+                  <Button size="large" model="primary">
                      <Image src={instagram} alt="" />
                   </Button>
                   <div>
@@ -72,7 +72,7 @@ export default function Contact() {
                </Link>
             </div>
             <Link href={pages.contact}>
-               <Button type="primary" size="medium">
+               <Button model="primary" size="medium">
                   <Paragraph>Contactează-ne!</Paragraph>
                </Button>
             </Link>

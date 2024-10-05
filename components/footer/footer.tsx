@@ -59,7 +59,7 @@ export default function Footer() {
                   href={`mailto:${socials.email}`}
                   aria-label="email de contact"
                >
-                  <Button size="small" type="secondary">
+                  <Button size="small" model="secondary">
                      <Image src={email} alt="email" />
                   </Button>
                   <Paragraph>{socials.email}</Paragraph>
@@ -69,7 +69,7 @@ export default function Footer() {
                   target="_blank"
                   aria-label="link către pagina de instagram"
                >
-                  <Button size="small" type="secondary">
+                  <Button size="small" model="secondary">
                      <Image src={instagram} alt="instagram" />
                   </Button>
                   <Paragraph>{socials.instagram.slice(12)}</Paragraph>
@@ -79,7 +79,7 @@ export default function Footer() {
                   target="_blank"
                   aria-label="link către pagina de linkedin"
                >
-                  <Button size="small" type="secondary">
+                  <Button size="small" model="secondary">
                      <Image src={linkedin} alt="linkedin" />
                   </Button>
                   <Paragraph>{socials.linkedin.slice(12)}</Paragraph>
@@ -89,7 +89,7 @@ export default function Footer() {
                   target="_blank"
                   aria-label="link către pagina de facebook"
                >
-                  <Button size="small" type="secondary">
+                  <Button size="small" model="secondary">
                      <Image src={facebook} alt="facebook" />
                   </Button>
                   <Paragraph>{socials.facebook.slice(12)}</Paragraph>

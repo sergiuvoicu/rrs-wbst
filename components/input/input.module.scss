@@ -1,9 +1,40 @@
+.checkboxError {
+   span {
+      &::before {
+         border: 0.5px solid rgb(196, 64, 64);
+      }
+   }
+
+   ~ p {
+      color: rgb(196, 64, 64);
+      margin: 5px 0px 0px 0px;
+      font-size: 11px;
+   }
+}
+
+.inputError {
+   textarea,
+   input {
+      border: 0.5px solid rgb(196, 64, 64) !important;
+   }
+
+   > p {
+      color: rgb(196, 64, 64);
+      margin: 5px 0px 0px 0px;
+      font-size: 11px;
+   }
+}
+
 .inputWrapper {
    width: 100%;
    position: relative;
 
-   input {
+   input,
+   textarea {
+      max-width: calc(100% - 30px);
+      min-width: calc(100% - 30px);
       width: calc(100% - 30px);
+      max-height: 400px;
       outline: none;
       border: none;
       padding: 15px;
@@ -34,10 +65,17 @@
       }
    }
 
+   textarea {
+      min-height: 200px;
+      ~ label {
+         top: 27px;
+      }
+   }
+
    label {
       font-size: 14px;
       position: absolute;
-      top: 50%;
+      top: 27px;
       left: 15px;
       transform: translate(0, -50%);
       color: #959595;

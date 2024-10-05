@@ -25,32 +25,32 @@ export default function Dev() {
 
    return (
       <>
-         <Button type="primary" size="small">
+         <Button model="primary" size="small">
             <p>Small Button</p>
          </Button>
          <br />
          <br />
-         <Button type="primary" size="medium">
+         <Button model="primary" size="medium">
             <p>Medium Button</p>
          </Button>
          <br />
          <br />
-         <Button type="primary" size="large">
+         <Button model="primary" size="large">
             <p>Large Button</p>
          </Button>
          <br />
          <br />
-         <Button type="secondary" size="small">
+         <Button model="secondary" size="small">
             <p>Small Button</p>
          </Button>
          <br />
          <br />
-         <Button type="secondary" size="medium">
+         <Button model="secondary" size="medium">
             <p>Medium Button</p>
          </Button>
          <br />
          <br />
-         <Button type="secondary" size="large">
+         <Button model="secondary" size="large">
             <p>Large Button</p>
          </Button>
          <Title size="large">#ReDU - Registrul digital al utilajelor</Title>
@@ -93,9 +93,24 @@ export default function Dev() {
          })}
          <form style={{ marginLeft: 100, marginTop: 50 }}>
             <FormSection sectionName="Detalii generale">
-               <Input type="text" label="Nume de familie" />
-               <Input type="number" label="Nume" />
-               <Input type="checkbox" name="checkbox" label="sadfsa" />
+               <Input
+                  type="text"
+                  label="Nume de familie"
+                  error="saassssssssssssssssssssss"
+               />
+               <Input type="number" label="Nume" error={"asd"} />
+               <Input
+                  type="checkbox"
+                  name="checkbox"
+                  label="sadfsa"
+                  error="sad"
+               />
+               <Input
+                  type="textarea"
+                  name="asd"
+                  label="asd"
+                  error="sadasdwadsd"
+               />
             </FormSection>
          </form>
          <ImplicateSection />

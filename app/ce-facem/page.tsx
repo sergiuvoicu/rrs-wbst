@@ -42,7 +42,7 @@ export default function CeFacem() {
                      >
                         <Image src={project.image} alt="" />
                         <h1>{project.name}</h1>
-                        <Button size="small" type="primary">
+                        <Button size="small" model="primary">
                            <Paragraph>Află mai multe</Paragraph>
                         </Button>
                      </Link>

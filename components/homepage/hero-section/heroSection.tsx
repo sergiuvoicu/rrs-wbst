@@ -32,7 +32,7 @@ export default function HeroSection() {
                siguranță a structurilor afectate.
             </Paragraph>
             <div>
-               <Button size="small" type="primary">
+               <Button size="small" model="primary">
                   <Paragraph>Află mai multe!</Paragraph>
                </Button>
                <Paragraph>Și urmărește-ne pe ►</Paragraph>
@@ -41,7 +41,7 @@ export default function HeroSection() {
                      href={`mailto:${socials.email}`}
                      aria-label="email de contact"
                   >
-                     <Button size="small" type="primary">
+                     <Button size="small" model="primary">
                         <Image src={email} alt="email" />
                      </Button>
                   </Link>
@@ -50,7 +50,7 @@ export default function HeroSection() {
                      target="_blank"
                      aria-label="link către pagina de instagram"
                   >
-                     <Button size="small" type="primary">
+                     <Button size="small" model="primary">
                         <Image src={instagram} alt="instagram" />
                      </Button>
                   </Link>
@@ -59,7 +59,7 @@ export default function HeroSection() {
                      target="_blank"
                      aria-label="link către pagina de linkedin"
                   >
-                     <Button size="small" type="primary">
+                     <Button size="small" model="primary">
                         <Image src={linkedin} alt="linkedin" />
                      </Button>
                   </Link>
@@ -68,7 +68,7 @@ export default function HeroSection() {
                      target="_blank"
                      aria-label="link către pagina de facebook"
                   >
-                     <Button size="small" type="primary">
+                     <Button size="small" model="primary">
                         <Image src={facebook} alt="facebook" />
                      </Button>
                   </Link>

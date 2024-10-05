@@ -34,7 +34,7 @@ export default function OrdinulCriminal() {
                ordinului criminal.
             </Paragraph>
             <Link href={""}>
-               <Button size="medium" type="secondary">
+               <Button size="medium" model="secondary">
                   <Paragraph>Află mai multe</Paragraph>
                </Button>
             </Link>
