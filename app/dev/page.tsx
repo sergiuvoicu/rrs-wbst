@@ -53,9 +53,9 @@ export default function Dev() {
          <Button model="secondary" size="large">
             <p>Large Button</p>
          </Button>
-         <Title size="large">#ReDU - Registrul digital al utilajelor</Title>
+         <Title size="large">ReDU - Registrul digital al utilajelor</Title>
          <Title size="small">
-            Cine suntem? #ReDU - Registrul digital al utilajelor #ReDU
+            Cine suntem? ReDU - Registrul digital al utilajelor ReDU
          </Title>
          <Paragraph>
             Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul

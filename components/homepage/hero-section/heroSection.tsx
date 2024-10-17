@@ -25,9 +25,9 @@ export default function HeroSection() {
    return (
       <div className={styles.wrapper}>
          <div className={styles.content}>
-            <Title size="large">#ReDU - Registrul digital al utilajelor</Title>
+            <Title size="large">ReDU - Registrul digital al utilajelor</Title>
             <Paragraph>
-               #ReDU (Registrul Digital al Utilajelor) este un proiect în mai
+               ReDU (Registrul Digital al Utilajelor) este un proiect în mai
                multe etape ce presupune crearea unei hărți în timp real cu toate
                utilajele pregătite pentru eliberarea căilor de acces după
                cutremur, salvarea persoanelor de sub dărâmături și punerea în
