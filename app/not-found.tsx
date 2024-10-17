@@ -22,7 +22,7 @@ export default function NotFound() {
             hățișurile internetului, cine știe?
          </Paragraph>
          <Link href={pages.acasa}>
-            <Button type="primary" size="medium">
+            <Button model="primary" size="medium">
                <Paragraph>Întoarce-te în siguranță!</Paragraph>
             </Button>
          </Link>

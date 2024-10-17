@@ -10,6 +10,7 @@ import Image from "next/image";
 
 // Assets
 import telefon from "../../../assets/bucurestiulDupaCutremur.png";
+import { pages } from "@/utilities/pages";
 
 export default function BucurestiulDupaCutremur() {
    return (
@@ -18,8 +19,8 @@ export default function BucurestiulDupaCutremur() {
             Bucureștiul <br /> după cutremur
          </Title>
          <Paragraph>
-            <Link href={""}>DupaCutremur.ro</Link> este un proiect Re:Rise și
-            <Link href={""}> geo-spatial.org</Link> prin care lansăm un îndemn
+            <Link target="_blank" href={pages.dupaCutremur}>DupaCutremur.ro</Link> este un proiect Re:Rise și
+            <Link target="_blank" href={pages.geoSpatial}> geo-spatial.org</Link> prin care lansăm un îndemn
             la pregătire și învățare, ilustrând atât amprenta clădirilor
             vulnerabile (RS I, U1, U2, U3, RS II), cât și aria aproximativă în
             caz de colaps a acestor clădiri, precum și segmentele de drum în
@@ -39,7 +40,7 @@ export default function BucurestiulDupaCutremur() {
                echipele de intervenție?
             </li>
          </ul>
-         <Link href={""}>
+         <Link target="_blank" href={pages.dupaCutremur}>
             <Button size="medium" model="primary">
                <Paragraph>Află mai multe!</Paragraph>
             </Button>

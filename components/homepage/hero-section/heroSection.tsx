@@ -18,6 +18,8 @@ import Link from "next/link";
 
 // Utilities
 import { socials } from "@/utilities/socials";
+import { pages } from "@/utilities/pages";
+
 
 export default function HeroSection() {
    return (
@@ -32,12 +34,15 @@ export default function HeroSection() {
                siguranță a structurilor afectate.
             </Paragraph>
             <div>
-               <Button size="small" model="primary">
-                  <Paragraph>Află mai multe!</Paragraph>
-               </Button>
+               <Link href={pages.ceFacem}>
+                  <Button size="small" model="primary">
+                     <Paragraph>Află mai multe!</Paragraph>
+                  </Button>
+               </Link>
                <Paragraph>Și urmărește-ne pe ►</Paragraph>
                <div>
                   <Link
+                     target="_top"
                      href={`mailto:${socials.email}`}
                      aria-label="email de contact"
                   >
