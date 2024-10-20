@@ -8,3 +8,27 @@
       }
    }
 }
+
+.confirmation {
+   height: fit-content;
+   width: 300px;
+   padding: 30px;
+   background-color: rgb(9, 183, 64);
+   z-index: 10;
+   position: fixed;
+   right: calc(-100% - 40px);
+   bottom: 40px;
+   border: 5px solid white;
+   transition: 800ms ease-out;
+
+   &[data-is-shown="true"] {
+      right: 40px;
+   }
+
+   h1 {
+      color: white;
+      margin: 0px;
+      line-height: 35px;
+      transition: 1200ms ease-in-out;
+   }
+}

@@ -60,7 +60,7 @@
    width: fit-content;
 
    .slide {
-      transition: 400ms ease-in-out;
+      transition: 400ms ease-in-out !important;
       position: absolute;
       z-index: 1;
       left: 0px;
@@ -76,7 +76,7 @@
       height: max-content;
 
       * {
-         transition: 500ms ease-in-out;
+         transition: 500ms ease-in-out !important;
       }
 
       &::before {

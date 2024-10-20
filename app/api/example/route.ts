@@ -1,27 +1,31 @@
-import { NextApiRequest } from "next";
-import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-
-export async function GET(request: Request) {
-   console.log("it works");
-   return NextResponse.json({ msg: "Hello from server" });
-}
 
 const transport = nodemailer.createTransport({
    host: "smtp.gmail.com",
    port: 587,
    auth: {
-      user: "",
-      pass: "",
+      // TODO: add noreply@rerise.org
+      user: "maresgabriel.dev@gmail.com",
+      pass: "ldiy bdqa upfe xtfy",
+   },
+   // TODO, what is this?
+   tls: {
+      rejectUnauthorized: false,
    },
 });
 
-export async function POST(request: NextApiRequest) {
+// TODO: Rename routes (this one too!)
+// TODO: HTML EMAIL TEMPLATE
+
+export async function POST(request: Request) {
+   const { name, email, message } = await request.json();
+   console.log(name, email, message);
+
    try {
       const result = await transport.sendMail({
-         from: "",
-         to: "",
-         html: `<h1>title</h1> <p>paragraph</p>`,
+         from: "maresgabriel.dev@gmail.com",
+         to: "maresgabriel.dev@gmail.com",
+         html: `<h1>${name}</h1> <p>${email}</p> ${message}`,
          subject: "is there a subject here?",
       });
       return Response.json({ sent: "sent" });

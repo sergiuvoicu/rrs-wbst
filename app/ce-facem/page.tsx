@@ -26,7 +26,9 @@ export default function CeFacem() {
          <BucurestiulDupaCutremur />
          <OrdinulCriminal />
          <MemorialulLuiUrsu />
-         <div className={styles.projects}>
+
+         {/* TODO: UNCOMMENT THIS SECTION AFTER FIRST PROTOTYPE */}
+         {/* <div className={styles.projects}>
             <Title size="small">Plus multe altele!</Title>
             <Paragraph>
                Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă
@@ -49,7 +51,7 @@ export default function CeFacem() {
                   );
                })}
             </div>
-         </div>
+         </div> */}
 
          <Implicate />
       </div>
