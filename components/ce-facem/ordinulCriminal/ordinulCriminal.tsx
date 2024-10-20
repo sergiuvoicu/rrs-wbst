@@ -10,6 +10,7 @@ import Link from "next/link";
 
 // Assets
 import poster from "../../../assets/ordinulCriminal.png";
+import { pages } from "@/utilities/pages";
 
 export default function OrdinulCriminal() {
    return (
@@ -33,7 +34,7 @@ export default function OrdinulCriminal() {
                Re:Rise publică în premieră stenograma acelei ședințe și dovezile
                ordinului criminal.
             </Paragraph>
-            <Link href={""}>
+            <Link target="_blank" href={pages.ordinulCriminal}>
                <Button size="medium" model="secondary">
                   <Paragraph>Află mai multe</Paragraph>
                </Button>

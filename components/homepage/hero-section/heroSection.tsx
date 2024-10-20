@@ -18,26 +18,31 @@ import Link from "next/link";
 
 // Utilities
 import { socials } from "@/utilities/socials";
+import { pages } from "@/utilities/pages";
+
 
 export default function HeroSection() {
    return (
       <div className={styles.wrapper}>
          <div className={styles.content}>
-            <Title size="large">#ReDU - Registrul digital al utilajelor</Title>
+            <Title size="large">ReDU - Registrul digital al utilajelor</Title>
             <Paragraph>
-               #ReDU (Registrul Digital al Utilajelor) este un proiect în mai
+               ReDU (Registrul Digital al Utilajelor) este un proiect în mai
                multe etape ce presupune crearea unei hărți în timp real cu toate
                utilajele pregătite pentru eliberarea căilor de acces după
                cutremur, salvarea persoanelor de sub dărâmături și punerea în
                siguranță a structurilor afectate.
             </Paragraph>
             <div>
-               <Button size="small" model="primary">
-                  <Paragraph>Află mai multe!</Paragraph>
-               </Button>
+               <Link href={pages.ceFacem}>
+                  <Button size="small" model="primary">
+                     <Paragraph>Află mai multe!</Paragraph>
+                  </Button>
+               </Link>
                <Paragraph>Și urmărește-ne pe ►</Paragraph>
                <div>
                   <Link
+                     target="_top"
                      href={`mailto:${socials.email}`}
                      aria-label="email de contact"
                   >

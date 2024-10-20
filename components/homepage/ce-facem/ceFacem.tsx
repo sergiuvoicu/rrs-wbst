@@ -40,7 +40,7 @@ export default function CeFacem() {
          }))
       );
    }
-
+   
    return (
       <div className={styles.container}>
          <div className={styles.background} />
@@ -62,19 +62,15 @@ export default function CeFacem() {
          <div className={styles.carousel}>
             {projectsList.map((project) => {
                return (
-                  <div
-                     key={project.id}
-                     data-slide-position={project.id}
-                     className={styles.slide}
+                  <Link target={project.externalURL ? "_blank" : "_self"}
+                        href={project.externalURL ?? `${pages.ceFacem}/${project.name}`}
+                        key={project.id}
+                        data-slide-position={project.id}
+                        className={styles.slide}
                   >
                      <Image src={project.image} alt={project.name} />
                      <h1>{project.name}</h1>
-                     <Link href={project.name}>
-                        <Button model="primary" size="small">
-                           <Paragraph>Află mai multe!</Paragraph>
-                        </Button>
-                     </Link>
-                  </div>
+                  </Link>
                );
             })}
             <div className={styles.controls}>

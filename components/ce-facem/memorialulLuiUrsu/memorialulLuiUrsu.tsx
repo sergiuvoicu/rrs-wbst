@@ -10,6 +10,7 @@ import Image from "next/image";
 
 // Assets
 import autoportrete from "../../../assets/memorialulLuiUrsu.png";
+import { pages } from "@/utilities/pages";
 
 export default function MemorialulLuiUrsu() {
    return (
@@ -33,7 +34,7 @@ export default function MemorialulLuiUrsu() {
             să se dezică de spusele sale, a sfârșit torturat și, în cele din
             urmă, <b> ucis de securitate pe 17 noiembrie 1985. </b>
          </Paragraph>
-         <Link href={""}>
+         <Link target="_blank" href={pages.memorialulLuiUrsu}>
             <Button size="medium" model="primary">
                <Paragraph>Află mai multe</Paragraph>
             </Button>

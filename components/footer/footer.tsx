@@ -56,6 +56,7 @@ export default function Footer() {
             <div className={styles.socials}>
                <Title size="small">Unde ne găsești?</Title>
                <Link
+                  target="_top"
                   href={`mailto:${socials.email}`}
                   aria-label="email de contact"
                >

@@ -38,7 +38,7 @@ export default function Contact() {
                simplu test al reacțiilor, înregistrându-se zero pagube.
             </Paragraph>
             <div>
-               <Link href={`mailto:${socials.email}`} target="_blank">
+               <Link href={`mailto:${socials.email}`} target="_top">
                   <Button size="large" model="primary">
                      <Image src={email} alt="" />
                   </Button>

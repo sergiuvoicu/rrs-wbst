@@ -40,6 +40,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   </Button>
                </Link>
                <Link
+                  target="_top"
                   href={`mailto:${socials.email}`}
                   aria-label="email-ul membrului"
                >
