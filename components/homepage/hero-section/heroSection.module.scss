@@ -53,6 +53,7 @@ $contentLeftMargin: 100px;
          p {
             color: var(--primary-white);
          }
+         
       }
 
       > p {
@@ -68,6 +69,10 @@ $contentLeftMargin: 100px;
 
          button {
             aspect-ratio: 1/1;
+            width: 50px;
+            svg {
+               color: var(--primary-white)
+            }
          }
       }
    }

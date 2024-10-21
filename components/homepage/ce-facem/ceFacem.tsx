@@ -6,24 +6,24 @@ import styles from "./cefacem.module.scss";
 // Assets
 import background from "../../../assets/heroSection.jpg";
 
-import arrow from "../../../assets/arrow.png";
-
 // Components
 import Image from "next/image";
+import Link from "next/link";
 import Title from "../../../components/title/title";
 import Paragraph from "@/components/paragraph/paragraph";
 import Button from "@/components/button/button";
-import Link from "next/link";
 
 // Utilities
-import { pages } from "@/utilities/pages";
 import { useState } from "react";
+import { pages } from "@/utilities/pages";
 import { projects } from "@/utilities/projects";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function CeFacem() {
    const [projectsList, setProjects] = useState(projects.slice(0, 7));
 
-   function nextSlide() {
+   function prevSlide() {
       setProjects((prevProjects) =>
          prevProjects.map((project) => ({
             ...project,
@@ -32,7 +32,7 @@ export default function CeFacem() {
       );
    }
 
-   function prevSlide() {
+   function nextSlide() {
       setProjects((prevProjects) =>
          prevProjects.map((project) => ({
             ...project,
@@ -75,10 +75,10 @@ export default function CeFacem() {
             })}
             <div className={styles.controls}>
                <Button model="primary" size="small" onClick={prevSlide}>
-                  <Image src={arrow} alt="sageata spre stanga"></Image>
+                  <FontAwesomeIcon icon={faCaretLeft} />
                </Button>
-               <Button onClick={nextSlide} model="primary" size="small">
-                  <Image src={arrow} alt="sageata spre dreapta"></Image>
+               <Button model="primary" size="small"  onClick={nextSlide}>
+                  <FontAwesomeIcon icon={faCaretRight} />
                </Button>
             </div>
          </div>

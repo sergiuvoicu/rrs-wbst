@@ -69,7 +69,8 @@
             aspect-ratio: 1/1;
             transform: translateY(50%) translateX(15px);
 
-            img {
+            svg {
+               color: var(--primary-white);
                width: 80%;
                aspect-ratio: 1/1;
             }

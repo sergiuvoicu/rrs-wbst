@@ -31,7 +31,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-
+      
       > p {
          margin: 10px 0px 25px 0px;
          font-size: 18px;
@@ -45,7 +45,10 @@
          gap: 5px;
 
          button {
-            width: 45px;
+            width: 50px;
+            svg {
+               color: var(--primary-white);
+            }
          }
       }
    }

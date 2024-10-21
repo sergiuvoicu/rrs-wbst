@@ -9,14 +9,13 @@ import Image from "next/image";
 
 // Assets
 import contact from "../../../assets/contactHomepage.png";
-import email from "../../../assets/email_white.svg";
-import facebook from "../../../assets/facebook_white.svg";
-import linkedin from "../../../assets/linkedin_white.svg";
-import instagram from "../../../assets/email_white.svg";
 
 // Utilities
 import { pages } from "@/utilities/pages";
 import { socials } from "@/utilities/socials";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
    return (
@@ -40,7 +39,7 @@ export default function Contact() {
             <div>
                <Link href={`mailto:${socials.email}`} target="_top">
                   <Button size="large" model="primary">
-                     <Image src={email} alt="" />
+                     <FontAwesomeIcon icon={faEnvelope} />
                   </Button>
                   <div>
                      <Paragraph>{socials.email}</Paragraph>
@@ -48,7 +47,7 @@ export default function Contact() {
                </Link>
                <Link href={socials.linkedin} target="_blank">
                   <Button size="large" model="primary">
-                     <Image src={linkedin} alt="" />
+                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </Button>
                   <div>
                      <Paragraph>{socials.linkedin.slice(25)}</Paragraph>
@@ -56,7 +55,7 @@ export default function Contact() {
                </Link>
                <Link href={socials.facebook} target="_blank">
                   <Button size="large" model="primary">
-                     <Image src={facebook} alt="" />
+                     <FontAwesomeIcon icon={faFacebookF} />
                   </Button>
                   <div>
                      <Paragraph>{socials.facebook.slice(25)}</Paragraph>
@@ -64,7 +63,7 @@ export default function Contact() {
                </Link>
                <Link href={socials.instagram} target="_blank">
                   <Button size="large" model="primary">
-                     <Image src={instagram} alt="" />
+                     <FontAwesomeIcon icon={faInstagram} />
                   </Button>
                   <div>
                      <Paragraph>{socials.instagram.slice(26)}</Paragraph>

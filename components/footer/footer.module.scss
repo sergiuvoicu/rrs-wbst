@@ -67,6 +67,10 @@ $footerLeftRightPadding: 100px;
    flex-direction: column;
    gap: 10px;
 
+   svg {
+      width: 50%;
+      color: var(--secondary-orange);
+   }
    a {
       display: flex;
       align-items: center;
