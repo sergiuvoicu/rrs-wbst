@@ -11,19 +11,32 @@
    }
 
    > div {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: flex;
+      width: 100%;
+      overflow-x: scroll;
       gap: 60px;
+      padding: 1em 0;
+
+      &::-webkit-scrollbar{
+         border-radius: 15px;
+         height: 8px;
+      }
+      &::-webkit-scrollbar-thumb{
+         background-color: var(--primary-orange);
+         border-radius: 10px;
+       }
+       &::-webkit-scrollbar-track{
+         border-radius: 15px;
+         background-color: var(--tertiary-white);
+       }
    }
 }
 
 @media only screen and (max-width: 1150px) {
    .wrapper {
       width: 90vw;
-
       > div {
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
+         gap: 30px;
       }
    }
 }
@@ -31,10 +44,5 @@
 @media only screen and (max-width: 600px) {
    .wrapper {
       width: 90vw;
-
-      > div {
-         grid-template-columns: 1fr;
-         grid-template-rows: 1fr 1fr 1fr 1fr;
-      }
    }
 }

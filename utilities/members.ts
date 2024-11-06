@@ -54,4 +54,44 @@ export const members: IMember[] = [
       instagramLink: "Mihai Florin Voicu",
       facebookLink: "Mihai Florin Voicu",
    },
+   {
+      name: "d",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at urna iaculis mi euismod tempus non quis quam. Nullam pharetra lacinia neque, non ultrices sem",
+      image: MihaiFlorinVoicu,
+      email: "Mihai Florin Voicu",
+      linkedinLink: "Mihai Florin Voicu",
+      instagramLink: "Mihai Florin Voicu",
+      facebookLink: "Mihai Florin Voicu",
+   },
+   {
+      name: "a",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at urna iaculis mi euismod tempus non quis quam. Nullam pharetra lacinia neque, non ultrices sem",
+      image: RudolfMihaiu,
+      email: "Mihai Florin Voicu",
+      linkedinLink: "Mihai Florin Voicu",
+      instagramLink: "Mihai Florin Voicu",
+      facebookLink: "Mihai Florin Voicu",
+   },
+   {
+      name: "b",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at urna iaculis mi euismod tempus non quis quam. Nullam pharetra lacinia neque, non ultrices sem",
+      image: CiprianSpataru,
+      email: "Mihai Florin Voicu",
+      linkedinLink: "Mihai Florin Voicu",
+      instagramLink: "Mihai Florin Voicu",
+      facebookLink: "Mihai Florin Voicu",
+   },
+   {
+      name: "c",
+      description:
+         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at urna iaculis mi euismod tempus non quis quam. Nullam pharetra lacinia neque, non ultrices sem",
+      image: MateiSumbasacu,
+      email: "Mihai Florin Voicu",
+      linkedinLink: "Mihai Florin Voicu",
+      instagramLink: "Mihai Florin Voicu",
+      facebookLink: "Mihai Florin Voicu",
+   },
 ];
