@@ -3,10 +3,6 @@ import styles from "./footer.module.scss";
 
 // Assets
 import logo from "../../assets/logo_white.svg";
-import email from "../../assets/email.svg";
-import facebook from "../../assets/facebook.svg";
-import linkedin from "../../assets/linkedin.svg";
-import instagram from "../../assets/instagram.svg";
 
 // Components
 import Image from "next/image";
@@ -18,6 +14,9 @@ import Button from "../button/button";
 //Utilities
 import { socials } from "@/utilities/socials";
 import { pages } from "@/utilities/pages";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
    return (
@@ -61,7 +60,7 @@ export default function Footer() {
                   aria-label="email de contact"
                >
                   <Button size="small" model="secondary">
-                     <Image src={email} alt="email" />
+                     <FontAwesomeIcon icon={faEnvelope} />
                   </Button>
                   <Paragraph>{socials.email}</Paragraph>
                </Link>
@@ -71,7 +70,7 @@ export default function Footer() {
                   aria-label="link către pagina de instagram"
                >
                   <Button size="small" model="secondary">
-                     <Image src={instagram} alt="instagram" />
+                     <FontAwesomeIcon icon={faInstagram} />
                   </Button>
                   <Paragraph>{socials.instagram.slice(12)}</Paragraph>
                </Link>
@@ -81,7 +80,7 @@ export default function Footer() {
                   aria-label="link către pagina de linkedin"
                >
                   <Button size="small" model="secondary">
-                     <Image src={linkedin} alt="linkedin" />
+                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </Button>
                   <Paragraph>{socials.linkedin.slice(12)}</Paragraph>
                </Link>
@@ -91,7 +90,7 @@ export default function Footer() {
                   aria-label="link către pagina de facebook"
                >
                   <Button size="small" model="secondary">
-                     <Image src={facebook} alt="facebook" />
+                     <FontAwesomeIcon icon={faFacebookF} fixedWidth/>
                   </Button>
                   <Paragraph>{socials.facebook.slice(12)}</Paragraph>
                </Link>

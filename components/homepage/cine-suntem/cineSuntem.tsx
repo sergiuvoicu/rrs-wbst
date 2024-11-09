@@ -23,7 +23,7 @@ export default function CineSuntem() {
          </Paragraph>
 
          <div>
-            {members.slice(0, 4).map((member) => {
+            {members.map((member) => {
                return (
                   <Member
                      key={member.name}

@@ -12,10 +12,9 @@ import Paragraph from "../paragraph/paragraph";
 import Button from "../button/button";
 
 // Assets
-import email from "../../assets/email_white.svg";
-import instagram from "../../assets/instagram_white.svg";
-import facebook from "../../assets/facebook_white.svg";
-import linkedin from "../../assets/linkedin_white.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Member(props: IMember & { detailed: boolean }) {
    return (
@@ -31,21 +30,21 @@ export default function Member(props: IMember & { detailed: boolean }) {
             {props.detailed && <Paragraph>{props.description}</Paragraph>}
             <div>
                <Link
-                  href={socials.linkedin}
-                  target="_blank"
-                  aria-label="link către profilul de linkedin al membrului"
-               >
-                  <Button size="small" model="primary">
-                     <Image src={linkedin} alt="linkedin" />
-                  </Button>
-               </Link>
-               <Link
                   target="_top"
                   href={`mailto:${socials.email}`}
                   aria-label="email-ul membrului"
                >
                   <Button size="small" model="primary">
-                     <Image src={email} alt="email" />
+                     <FontAwesomeIcon icon={faEnvelope}/>
+                  </Button>
+               </Link>
+               <Link
+                  href={socials.linkedin}
+                  target="_blank"
+                  aria-label="link către profilul de linkedin al membrului"
+               >
+                  <Button size="small" model="primary">
+                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </Button>
                </Link>
                <Link
@@ -54,7 +53,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   aria-label="link către profilul de instagram al membrului"
                >
                   <Button size="small" model="primary">
-                     <Image src={instagram} alt="instagram" />
+                     <FontAwesomeIcon icon={faInstagram}  />
                   </Button>
                </Link>
 
@@ -64,7 +63,7 @@ export default function Member(props: IMember & { detailed: boolean }) {
                   aria-label="link către profilul de facebook al membrului"
                >
                   <Button size="small" model="primary">
-                     <Image src={facebook} alt="facebook" />
+                     <FontAwesomeIcon icon={faFacebookF} size="sm" fixedWidth />
                   </Button>
                </Link>
             </div>

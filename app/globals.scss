@@ -8,6 +8,18 @@
    --tertiary-white: rgb(230, 230, 230);
    --active-state-white: rgb(200, 200, 200);
    --black: rgb(24, 24, 24);
+
+   &::-webkit-scrollbar{
+      border-radius: 15px;
+      height: 8px;
+   }
+   &::-webkit-scrollbar-thumb{
+      background-color: var(--primary-orange);
+      border-radius: 10px;
+   }
+   &::-webkit-scrollbar-track{
+      background-color: var(--tertiary-white);
+   }
 }
 
 html {

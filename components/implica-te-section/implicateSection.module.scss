@@ -111,6 +111,9 @@
 
       button {
          aspect-ratio: 1/1;
+         svg {
+            color: var(--secondary-orange)
+         }
       }
    }
 }

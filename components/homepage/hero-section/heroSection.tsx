@@ -2,11 +2,6 @@
 import styles from "./heroSection.module.scss";
 
 // Assets
-import backgroundImage from "../../../assets/heroSection.jpg";
-import email from "../../../assets/email_white.svg";
-import facebook from "../../../assets/facebook_white.svg";
-import linkedin from "../../../assets/linkedin_white.svg";
-import instagram from "../../../assets/instagram_white.svg";
 import excavator from "../../../assets/excavator.png";
 
 // Components
@@ -19,6 +14,9 @@ import Link from "next/link";
 // Utilities
 import { socials } from "@/utilities/socials";
 import { pages } from "@/utilities/pages";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function HeroSection() {
@@ -37,6 +35,7 @@ export default function HeroSection() {
                <Link href={pages.ceFacem}>
                   <Button size="small" model="primary">
                      <Paragraph>Află mai multe!</Paragraph>
+                     
                   </Button>
                </Link>
                <Paragraph>Și urmărește-ne pe ►</Paragraph>
@@ -47,7 +46,7 @@ export default function HeroSection() {
                      aria-label="email de contact"
                   >
                      <Button size="small" model="primary">
-                        <Image src={email} alt="email" />
+                        <FontAwesomeIcon icon={faEnvelope} />
                      </Button>
                   </Link>
                   <Link
@@ -56,7 +55,7 @@ export default function HeroSection() {
                      aria-label="link către pagina de instagram"
                   >
                      <Button size="small" model="primary">
-                        <Image src={instagram} alt="instagram" />
+                        <FontAwesomeIcon icon={faInstagram} />
                      </Button>
                   </Link>
                   <Link
@@ -65,7 +64,7 @@ export default function HeroSection() {
                      aria-label="link către pagina de linkedin"
                   >
                      <Button size="small" model="primary">
-                        <Image src={linkedin} alt="linkedin" />
+                        <FontAwesomeIcon icon={faLinkedinIn} />
                      </Button>
                   </Link>
                   <Link
@@ -74,7 +73,7 @@ export default function HeroSection() {
                      aria-label="link către pagina de facebook"
                   >
                      <Button size="small" model="primary">
-                        <Image src={facebook} alt="facebook" />
+                        <FontAwesomeIcon icon={faFacebookF} size="sm" fixedWidth/>
                      </Button>
                   </Link>
                </div>

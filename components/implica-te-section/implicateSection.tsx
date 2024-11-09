@@ -12,10 +12,13 @@ import { socials } from "@/utilities/socials";
 import { pages } from "@/utilities/pages";
 
 // Assets
-import instagram from "../../assets/instagram.svg";
-import facebook from "../../assets/facebook.svg";
-import linkedin from "../../assets/linkedin.svg";
 import animation from "../../assets/800_600.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+   faFacebookF,
+   faInstagram,
+   faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function ImplicateSection() {
    return (
@@ -59,7 +62,11 @@ export default function ImplicateSection() {
                      aria-label="link către pagina de linkedin"
                   >
                      <Button size="small" model="secondary">
-                        <Image src={linkedin} alt="linkedin" />
+                        <FontAwesomeIcon
+                           icon={faLinkedinIn}
+                           size="xl"
+                           fixedWidth
+                        />
                      </Button>
                   </Link>
                   <Link
@@ -68,7 +75,11 @@ export default function ImplicateSection() {
                      aria-label="link către pagina de instagram"
                   >
                      <Button size="small" model="secondary">
-                        <Image src={instagram} alt="instagram" />
+                        <FontAwesomeIcon
+                           icon={faInstagram}
+                           size="xl"
+                           fixedWidth
+                        />
                      </Button>
                   </Link>
 
@@ -78,7 +89,7 @@ export default function ImplicateSection() {
                      aria-label="link către pagina de facebook"
                   >
                      <Button size="small" model="secondary">
-                        <Image src={facebook} alt="facebook" />
+                        <FontAwesomeIcon icon={faFacebookF} />
                      </Button>
                   </Link>
                </div>
