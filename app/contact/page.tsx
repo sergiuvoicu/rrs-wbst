@@ -1,6 +1,5 @@
 "use client";
 // Styles
-import Implicate from "@/components/homepage/implica-te/implicate";
 import styles from "./styles.module.scss";
 
 // Components
@@ -10,12 +9,14 @@ import Input from "@/components/input/input";
 import Button from "@/components/button/button";
 import ReCAPTCHA from "react-google-recaptcha";
 import Paragraph from "@/components/paragraph/paragraph";
+import Implicate from "@/components/homepage/implica-te/implicate";
 
 // Utilities
 import { useState, useRef } from "react";
 import Recaptcha from "@/components/recaptcha/recaptcha";
 
 export default function Contact() {
+   const [isLoading, setIsLoading] = useState<boolean>(false);
    const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
    const [formErrors, setFormErrors] = useState<{
@@ -34,12 +35,10 @@ export default function Contact() {
       name: string;
       email: string;
       message: string;
-      token: string;
    }>({
       name: "",
       email: "",
       message: "",
-      token: "",
    });
 
    interface IConfirmationTypes {
@@ -65,49 +64,51 @@ export default function Contact() {
    async function onVerify(event?: React.MouseEvent<HTMLButtonElement>) {
       event?.preventDefault();
 
-      formData.name == "" &&
-         setFormErrors((prevErrors) => ({ ...prevErrors, name: "true" }));
-
+      let canSendForm = true;
       const emailRegex =
          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-      formData.email == ""
-         ? setFormErrors((prevErrors) => ({ ...prevErrors, email: "true" }))
-         : !emailRegex.test(formData.email) &&
-           setFormErrors((prevErrors) => ({
-              ...prevErrors,
-              email: "not valid",
-           }));
-
-      formData.message == "" &&
+      if (formData.name == "") {
          setFormErrors((prevErrors) => ({
             ...prevErrors,
-            message: "true",
+            name: "Acest câmp este obligatoriu",
          }));
+         canSendForm = false;
+      }
 
-      // new Promise((resolve, object) => {
-      //    if (
-      //       formErrors.name == null &&
-      //       formErrors.email == null &&
-      //       formErrors.message == null
-      //    ) {
-      //       resolve(null);
-      //    }
-      // })
-      //    .then(() => {
-      //       console.log("test");
-      //    })
-      //    .then(() => {
-      //       alert("test");
-      //    });
+      if (formData.email == "") {
+         setFormErrors((prevErrors) => ({
+            ...prevErrors,
+            email: "Acest câmp este obligatoriu",
+         }));
+         canSendForm = false;
+      } else if (!emailRegex.test(formData.email)) {
+         setFormErrors((prevErrors) => ({
+            ...prevErrors,
+            email: "Email-ul introdus nu este valid",
+         }));
+         canSendForm = false;
+      }
 
-      if (
-         formErrors.name == null &&
-         formErrors.email == null &&
-         formErrors.message == null &&
-         formData.token
-      ) {
+      if (formData.message == "") {
+         setFormErrors((prevErrors) => ({
+            ...prevErrors,
+            message: "Acest câmp este obligatoriu",
+         }));
+         canSendForm = false;
+      }
+
+      if (!recaptchaRef.current?.getValue()) {
+         setFormErrors((prevErrors) => ({
+            ...prevErrors,
+            token: "Acest câmp este obligatoriu",
+         }));
+         canSendForm = false;
+      }
+
+      if (canSendForm) {
          try {
+            setIsLoading(true);
             const response = await fetch("/api/example", {
                method: "POST",
                headers: {
@@ -117,25 +118,24 @@ export default function Contact() {
                   name: formData.name,
                   email: formData.email,
                   message: formData.message,
-                  token: formData.token,
                }),
             });
 
             if (response.ok) {
-               alert("SUCCESS");
+               setIsLoading(false);
+               showConfirmationModal({ type: "succes" });
                setFormData({
                   name: "",
                   email: "",
                   message: "",
-                  token: "",
                });
                recaptchaRef.current?.reset();
             } else {
-               alert("Failed to send the message. Please try again.");
+               throw new Error(`error`);
             }
          } catch (error) {
-            console.error("Error:", error);
-            alert("An error occurred. Please try again.");
+            setIsLoading(false);
+            showConfirmationModal({ type: "error" });
          }
       }
    }
@@ -148,7 +148,6 @@ export default function Contact() {
          />
 
          <div className={styles.wrapper}>
-            <div></div>
             <form>
                <FormSection>
                   <Input
@@ -162,6 +161,7 @@ export default function Contact() {
                               name: null,
                            }));
                      }}
+                     value={formData.name}
                      error={formErrors.name}
                   />
                   <Input
@@ -175,6 +175,7 @@ export default function Contact() {
                               email: null,
                            }));
                      }}
+                     value={formData.email}
                      error={formErrors.email}
                   />
                   <Input
@@ -193,13 +194,18 @@ export default function Contact() {
                               message: null,
                            }));
                      }}
+                     value={formData.message}
                      error={formErrors.message}
+                     maxLength={1000}
                   />
+                  <p className={styles.maxChars}>
+                     {formData.message.length} / 1000 max. caractere
+                  </p>
                   <Recaptcha
                      ref={recaptchaRef}
                      error={formErrors.token}
-                     onChange={(token) => {
-                        setFormData({ ...formData, token: token });
+                     onChange={() => {
+                        setFormErrors({ ...formErrors, token: null });
                      }}
                   />
 
@@ -210,12 +216,11 @@ export default function Contact() {
                         onVerify(event);
                      }}
                   >
-                     <Paragraph>Trimite</Paragraph>
-                     <div className={styles.loading}>
-                        <span />
-                        <span />
-                        <span />
-                     </div>
+                     {isLoading ? (
+                        <Paragraph>...</Paragraph>
+                     ) : (
+                        <Paragraph>Trimite</Paragraph>
+                     )}
                   </Button>
                </FormSection>
             </form>
@@ -225,7 +230,11 @@ export default function Contact() {
             data-is-shown={confirmation.shown}
             data-type={confirmation.type}
          >
-            <h1>Mesajul tău a fost trimis cu succes!</h1>
+            <h1>
+               {confirmation.type == "succes"
+                  ? "Mesajul tău a fost trimis cu succes!"
+                  : "eroare"}
+            </h1>
          </div>
 
          <Implicate />

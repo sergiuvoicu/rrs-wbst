@@ -1,35 +1,48 @@
 import nodemailer from "nodemailer";
+import { promises as fs } from "fs";
+import path from "path";
 
 const transport = nodemailer.createTransport({
    host: "smtp.gmail.com",
    port: 587,
    auth: {
       // TODO: add noreply@rerise.org
-      user: "maresgabriel.dev@gmail.com",
-      pass: "ldiy bdqa upfe xtfy",
+      user: "",
+      pass: "",
    },
-   // TODO, what is this?
    tls: {
       rejectUnauthorized: false,
    },
 });
 
-// TODO: Rename routes (this one too!)
-// TODO: HTML EMAIL TEMPLATE
+// TODO: Rename routes
 
 export async function POST(request: Request) {
+   const filePath = path.join(process.cwd(), "/app/api/emails/contact.html");
+   let htmlTemplate = await fs.readFile(filePath, "utf8");
+
    const { name, email, message } = await request.json();
-   console.log(name, email, message);
+
+   htmlTemplate = htmlTemplate
+      .replace("{{name}}", name)
+      .replace("{{email}}", email)
+      .replace("{{message}}", message);
 
    try {
       const result = await transport.sendMail({
          from: "maresgabriel.dev@gmail.com",
          to: "maresgabriel.dev@gmail.com",
-         html: `<h1>${name}</h1> <p>${email}</p> ${message}`,
+         html: htmlTemplate,
          subject: "is there a subject here?",
       });
-      return Response.json({ sent: "sent" });
+      return new Response(JSON.stringify({ sent: "sent" }), {
+         status: 200,
+         headers: { "Content-Type": "application/json" },
+      });
    } catch {
-      return Response.json({ sent: "NOT sent" });
+      return new Response(JSON.stringify({ sent: "NOT sent" }), {
+         status: 500,
+         headers: { "Content-Type": "application/json" },
+      });
    }
 }

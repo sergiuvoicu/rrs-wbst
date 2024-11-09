@@ -1,4 +1,13 @@
 .wrapper {
+   width: 90vw !important;
+   max-width: 450px !important;
+   overflow: hidden;
+
+   div {
+      width: 90vw !important;
+      max-width: 450px !important;
+   }
+
    p {
       color: rgb(196, 64, 64);
       margin: 5px 0px 0px 0px;

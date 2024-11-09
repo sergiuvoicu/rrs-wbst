@@ -1,4 +1,9 @@
 .wrapper {
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translateY(100px);
    form {
       button {
          width: 100%;
@@ -9,6 +14,15 @@
    }
 }
 
+.maxChars {
+   width: 100%;
+   text-align: right;
+   font-size: 14px;
+   color: rgb(150, 150, 150);
+   margin: 0px;
+   transform: translateY(-10px);
+}
+
 .confirmation {
    height: fit-content;
    width: 300px;
@@ -16,7 +30,7 @@
    background-color: rgb(9, 183, 64);
    z-index: 10;
    position: fixed;
-   right: calc(-100% - 40px);
+   right: calc(-100% - 80px);
    bottom: 40px;
    border: 5px solid white;
    transition: 800ms ease-out;
