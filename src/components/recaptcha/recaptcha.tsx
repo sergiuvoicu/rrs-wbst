@@ -12,12 +12,14 @@ type IReCaptchaPropsType = {
    error: string | null | false;
 };
 
+const siteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY
+
 const ReCaptcha = forwardRef<ReCAPTCHA, IReCaptchaPropsType>((props, ref) => {
    return (
       <div className={styles.wrapper}>
          <ReCAPTCHA
             ref={ref}
-            sitekey="6Lc4kUkqAAAAAGwnWD193kSP2DI0rWsPhNAonG-r"
+            sitekey={siteKey ?? ""}
             onChange={props.onChange}
          />
          {props.error && <p>{props.error}</p>}
@@ -25,4 +27,5 @@ const ReCaptcha = forwardRef<ReCAPTCHA, IReCaptchaPropsType>((props, ref) => {
    );
 });
 
+ReCaptcha.displayName = 'ReCaptcha'
 export default ReCaptcha;

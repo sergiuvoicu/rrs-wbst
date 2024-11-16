@@ -19,7 +19,7 @@ export default function ProjectPage({ params }: { params: IProjectPageURLParams 
       <div>
          <PageTitle
             title={t(currentProject?.nameIntlKey)}
-            description={currentProject?.description ?? ""}
+            description={currentProject?.descriptionIntlKey ?? ""}
          />
       </div>
    );
