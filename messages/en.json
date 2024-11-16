@@ -1,0 +1,230 @@
+{
+    "homepage": {
+        "heroSection": {
+            "title": "#ReDU - The Digital Equipment Registry",
+            "description": "#ReDU (Digital Equipment Registry) is a multi-phase project aiming to create a real-time map of all equipment ready for clearing access routes after an earthquake, rescuing individuals from rubble, and securing affected structures.",
+            "moreDetailsButton": "Find out more!",
+            "findOutMoreOn": "And follow us on ►",
+            "bannerText": "Be prepared in case of an earthquake!",
+            "backgroundAlternativeText": "Image with equipment"
+        },
+        "projectsSection": {
+            "title": "What we do",
+            "description": "The Seismic Risk Reduction Association is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise aims to act as a bridge between people exposed to seismic risk and, on the other hand.",
+            "projectsPage": {
+                "label": "Discover all our projects!",
+                "ariaLabel": "link to 'What we do' page"
+            },
+            "redu":{
+                "name": "#ReDU - The Digital Equipment Registry",
+                "description": "#ReDU (Digital Equipment Registry) is a multi-phase project aiming to create a real-time map of all equipment ready for clearing access routes after an earthquake, rescuing individuals from rubble, and securing affected structures."
+            },
+            "ordinulCriminal": {
+                "name": "The Criminal Order"
+            },
+            "memorialulLuiUrsu": {
+                "name": "Ursu’s Memorial"
+            },
+            "bucurestiulDupaCutremur": {
+                "name": "Bucharest After the Earthquake"
+            },
+            "backgroundAlternativeText": "background image"
+        },
+        "aboutSection": {
+            "title": "Who we are",
+            "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources."
+        },
+        "contactSection": {
+            "description": "We’re used to talking about earthquakes with a seemingly innate fatalism. We quickly close the topic, either with a 'God forbid,' an aphorism about fate, or a detached joke. Maybe this is natural, considering it’s been 14 years since the last notable earthquake here, in October 2004, and the only one experienced by the younger generation. At a magnitude of 6.0, it was merely a test of reactions, with zero damages recorded.",
+            "contactUsButton": "Contact us!",
+            "backgroundAlternativeText": "Prompt to contact us"
+        },
+        "supportUsSection": {
+            "title": "How you can help",
+            "description": "We’re used to talking about earthquakes with a seemingly innate fatalism. We quickly close the topic, either with a 'God forbid,' an aphorism about fate, or a detached joke. Maybe this is natural, considering it’s been 14 years since the last notable earthquake here, in October 2004, and the only one experienced by the younger generation. At a magnitude of 6.0, it was merely a test of reactions, with zero damages recorded.",
+            "socialsLabel": "And, follow us on social media!",
+            "backgroundAlternativeText": "Animation",
+            "contactUsButton": "Contact us!",
+            "links": {
+                "supportUs": {
+                    "label": "Get involved!",
+                    "ariaLabel": "link to Get involved page"
+                },
+                "join": {
+                    "label":"Become a volunteer!",
+                    "ariaLabel": "link to 'Get involved' page, 'Become a volunteer' section"
+                },
+                "donate": {
+                    "label":"Donate!",
+                    "ariaLabel": "link to 'Get involved' page, 'Donate' section"
+                },
+                "redirect": {
+                    "label":"Redirect 3.5%!",
+                    "ariaLabel": "link to 'Get involved' page, 'Redirect' section"
+                }
+            }
+        }
+    },
+    "socials": {
+        "email": {
+            "ariaLabel": "contact email"
+        },
+        "instagram": {
+            "ariaLabel": "link to Instagram page"
+        },
+        "linkedin": {
+            "ariaLabel": "link to LinkedIn page"
+        },
+        "facebook": {
+            "ariaLabel": "link to Facebook page"
+        }
+    },
+    "layout": {
+        "header": {
+            "logoAlternativeText": "Re:Rise logo",
+            "about": "Who we are",
+            "projects": "What we do",
+            "contact": "Contact us",
+            "supportUs": "Get involved"
+        },
+        "footer": {
+            "title": "Navigate with ease!",
+            "logoAlternativeText": "Re:Rise logo",
+            "links": {
+                "homepage": {
+                    "ariaLabel": "link to homepage"
+                },
+                "aboutPage": {
+                    "label": "Who we are",
+                    "ariaLabel": "link to Who we are page"
+                },
+                "projectsPage": {
+                    "label": "What we do",
+                    "ariaLabel": "link to What we do page"
+                },
+                "contactPage": {
+                    "label": "Contact us",
+                    "ariaLabel": "link to Contact us page"
+                },
+                "supportUsPage": {
+                    "label": "Get involved",
+                    "ariaLabel": "link to Get involved page"
+                },
+                "termsAndConditions": {
+                    "label": "Terms and conditions",
+                    "ariaLabel": "link to Terms and conditions"
+                },
+                "privacyPolicy": {
+                    "label": "Privacy policy",
+                    "ariaLabel": "link to Privacy policy"
+                },
+                "developersPage": {
+                    "label":  " ► here",
+                    "ariaLabel": "link to Developers page"
+                }
+            },
+            "socialsLabel": "Where to find us?",
+            "copyright": "@2024 - All rights reserved - See who designed & developed this website"
+        }
+    },
+    "notFound": {
+        "title": "Oops...",
+        "code": "404",
+        "description": "It seems you've found a secret spot... but it's so secret, we don't even know where it is! Don’t worry, it’s not your fault. Perhaps the page you're looking for is well hidden, or maybe it got lost in the internet’s labyrinth, who knows?",
+        "goBackButton": "Return safely!"
+    },
+    "aboutPage": {
+        "title": "Who we are",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources.",
+        "member": {
+            "portraitAlternativeText": "team member at Re:Rise",
+            "emailAriaLabel": "member's email",
+            "linkedinAriaLabel": "link to member's LinkedIn profile",
+            "instagramAriaLabel": "link to member's Instagram profile",
+            "facebookAriaLabel": "link to member's Facebook profile"
+        }
+    },
+    "contactPage": {
+        "title": "Contact us!",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources.",
+        "contactForm":{
+            "inputLabels": {
+                "name": "Your name",
+                "email": "Your email address",
+                "message": "What would you like to tell us?"
+            },
+            "constraints": {
+                "messageMaximumLength": "1000 max. characters"
+            },
+            "validationMessages": {
+                "mandatoryField": "This field is required",
+                "invalidEmail": "The email entered is invalid"
+            },
+            "submitButtonLabel": "Send",
+            "submission": {
+                "success": "Your message has been successfully sent!",
+                "fail": "Oops... An error occurred!"
+            }
+        }
+    },
+    "developersPage": {
+        "title": "Website Developers",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources."
+    },
+    "privacyPolicyPage": {
+        "title": "Privacy Policy",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources."
+    },
+    "termsAndConditionsPage": {
+        "title": "Terms and Conditions",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources."
+    },
+    "supportUsPage": {
+        "title": "Get Involved with Re:Rise",
+        "description": "The Seismic Risk Reduction Association (Re:Rise) is the community's response to the urgent need to reduce seismic vulnerability in Romania. Re:Rise acts as a bridge between those exposed to seismic risk and, on the other hand, the available technological, financial, administrative, and human resources.",
+        "socialMediaTitle": "Follow us on social media!",
+        "socialMediaDescription": "We’re used to talking about earthquakes with a seemingly innate fatalism. We quickly close the topic, either with a 'God forbid,' an aphorism about fate, or a detached joke. Maybe this is natural, considering it’s been 14 years since the last notable earthquake here, in October 2004, and the only one experienced by the younger generation. At a magnitude of 6.0, it was merely a test of reactions, with zero damages recorded.",
+        "contactUsButton": "Contact us!"
+
+    },
+    "projectsPage": {
+        "title": "What We Do at Re:Rise?",
+        "description": "Re:Rise is an association that works to reduce seismic vulnerability in Romania by connecting those at risk with available resources. The organization implements five key solutions, including a Digital Equipment Registry for intervention forces, a Rapid Drone Mapping System for authorities, and the Rescuer's WiFi Mesh for communication between rescuers and victims.",
+        "firstProject": {
+            "title": "Bucharest After the Earthquake",
+            "linksConnector": " is a Re:Rise project and ",
+            "description": " that calls for preparation and learning by illustrating both the footprint of vulnerable buildings (RS I, U1, U2, U3, RS II), as well as the approximate collapse area of these buildings and the road segments at risk of blockage due to rubble.",
+            "firstListItem": "What will the new map of post-seismic Bucharest look like? Which streets will be blocked by debris?",
+            "secondListItem": "How do we reach those trapped under debris / those in need as quickly as possible?",
+            "thirdListItem": "Which are the problematic zones and neighborhoods at risk of isolation from intervention teams?",
+            "findOutMore": "Find out more",
+            "imageAlternativeText": "A phone open on DupaCutremur.ro"
+        },
+        "secondProject": {
+            "title": "Ursu’s Memorial",
+            "description": {
+                "unbolded1": "By profession an engineer, but in essence a true polymath, ",
+                "bolded1": "Gheorghe Ursu was the first to publicly raise awareness about Bucharest’s seismic vulnerability.",
+                "unbolded2": "Through a letter sent to Radio Free Europe, he denounced that, following the 1977 earthquake, repairs were prematurely halted by Ceaușescu's direct order, ",
+                "bolded2": "leaving the people of Bucharest exposed to future earthquakes.",
+                "unbolded3": "For his act of truth-telling and his refusal to retract his statements, he was ultimately ",
+                "bolded3": "killed by the security forces on November 17, 1985."
+            },
+            "findOutMore": "Find out more",
+            "imageAlternativeText": "Self-portraits of Gheorghe Ursu"
+        },
+        "thirdProject": {
+            "title": "The Criminal Order",
+            "description": {
+                "firstSection": "Four months after the March 1977 earthquake, Nicolae Ceaușescu called an urgent meeting in Bucharest. On July 4, about 300 people (engineers, architects, party leaders, and local administration officials) were gathered in a hall behind the Communist Central Committee, where Ceaușescu ordered them to halt all reinforcement work on buildings affected by the earthquake.",
+                "secondSection": "In the capital alone, over 10,000 buildings were thus left vulnerable.",
+                "thirdSection": "Re:Rise publishes for the first time the transcript of that meeting and evidence of this criminal order."
+            },
+            "findOutMore": "Find out more",
+            "imageAlternativeText": "Quotes from the plenary session on July 4, 1977"
+        },
+        "moreOthers": "Plus many others!",
+        "projectsCollectionDescription": "We’re accustomed to speaking about earthquakes with a seemingly inherent fatalism",
+        "findOutMore": "Find out more"
+    }
+}

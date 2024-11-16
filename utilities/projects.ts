@@ -8,7 +8,8 @@ import { pages } from "./pages";
 
 interface IProject {
    id: number;
-   name: string;
+   nameIntlKey: string;
+   descriptionIntlKey?: string;
    image: any;
    externalURL?: string;
 }
@@ -16,64 +17,26 @@ interface IProject {
 export const projects: IProject[] = [
    {
       id: 1,
-      name: "ReDU - Registrul digital al utilajelor",
+      nameIntlKey: "redu.name",
+      descriptionIntlKey: "redu.description",
       image: one,
    },
    {
       id: 2,
-      name: "Ordinul Criminal",
+      nameIntlKey: "ordinulCriminal.name",
       image: doi,
       externalURL: pages.ordinulCriminal,
    },
    {
       id: 3,
-      name: "Memorialul lui Ursu",
+      nameIntlKey: "memorialulLuiUrsu.name",
       image: trei,
-      externalURL: pages.memorialulLuiUrsu
+      externalURL: pages.memorialulLuiUrsu,
    },
    {
       id: 4,
-      name: "ReDU - Registrul digital al utilajelor",
+      nameIntlKey: "bucurestiulDupaCutremur.name",
       image: patru,
-   },
-   {
-      id: 5,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: cinci,
-   },
-   {
-      id: 6,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: sase,
-   },
-   {
-      id: 7,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
-   },
-   {
-      id: 8,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
-   },
-   {
-      id: 9,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
-   },
-   {
-      id: 11,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
-   },
-   {
-      id: 12,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
-   },
-   {
-      id: 13,
-      name: "ReDU - Registrul digital al utilajelor",
-      image: one,
+      externalURL: pages.dupaCutremur
    },
 ];

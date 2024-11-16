@@ -1,0 +1,230 @@
+{
+    "homepage": {
+        "heroSection": {
+            "title": "#ReDU - Registrul digital al utilajelor",
+            "description": "#ReDU (Registrul Digital al Utilajelor) este un proiect în mai multe etape ce presupune crearea unei hărți în timp real cu toate utilajele pregătite pentru eliberarea căilor de acces după cutremur, salvarea persoanelor de sub dărâmături și punerea în siguranță a structurilor afectate.",
+            "moreDetailsButton": "Află mai multe!",
+            "findOutMoreOn": "Și urmărește-ne pe ►",
+            "bannerText": "Fii pregătit în caz de cutremur!",
+            "backgroundAlternativeText": "Imagine cu utilaj"
+        },
+        "projectsSection": {
+            "title": "Ce facem?",
+            "description": "Credem puternic în noile tehnologii ca sprijin în răspunsul post-seism. Dincolo de accelerarea programelor de consolidări și campaniile de pregătire, hotărâtoare pentru mii de vieți va fi intervenția din primele minute după un cutremur major. Re:Rise propune implementarea unui set de 5 soluții în vederea reducerii riscului seismic: Registrul Digital al Utilajelor (##ReDU) pune la dispoziția forțelor de intervenție informații despre flota de utilaje disponibile, Sistemul de Mapare Rapidă cu Drone va oferi autorităților o imagine rapidă și completă a stării de fapt post-seism, WiFi Mesh-ul Salvatorului va asigura comunicarea directă și independentă între salvator și victime, Programul Național de Pregătire și Voluntariat la Seism asigură instruirea populației astfel încât să poată contribui într-o mai mare măsură la efortul de intervenție, iar Senzorizarea 3D a Clădirilor Vulnerabile va furniza informații rapide salvatorilor cu privire la dimensiunea pagubelor suferite la seism. Ne plac proiectele inedite de informare publică. Vulnerabilitatea noastră seismică a fost mereu un subiect sensibil, pe care am preferat fie să-l evităm, fie să-l ignorăm ca societate. În Re:Rise, credem că vulnerabilitatea seismică din România a devenit în primul rând o problemă socială. De aceea, propunem o altfel de abordare în comunicare, prin proiecte, evenimente și campanii care să ne ajute să înțelegem de ce ne aflăm aici și ce trebuie făcut.",
+            "projectsPage": {
+                "label": "Descoperă toate proiectele noastre!",
+                "ariaLabel": "link către pagina ce facem"
+            },
+            "redu":{
+                "name": "#ReDU - Registrul digital al utilajelor",
+                "description": "#ReDU (Registrul Digital al Utilajelor) este un proiect în mai multe etape ce presupune crearea unei hărți în timp real cu toate utilajele pregătite pentru eliberarea căilor de acces după cutremur, salvarea persoanelor de sub dărâmături și punerea în siguranță a structurilor afectate."
+            },
+            "ordinulCriminal": {
+                "name": "Ordinul Criminal"
+            },
+            "memorialulLuiUrsu": {
+                "name": "Memorialul lui Ursu"
+            },
+            "bucurestiulDupaCutremur": {
+                "name": "Bucurestiul Dupa Cutremur"
+            },
+            "backgroundAlternativeText": "imagine de fundal"
+        },
+        "aboutSection": {
+            "title": "Cine suntem?",
+            "description": "Re:Rise este singura organizație din România dedicată reducerii riscului seismic, formată exclusiv din voluntari. Suntem aici pentru a aduce mai aproape comunitățile vulnerabile la cutremur de soluții și informații, prin coagularea de resurse tehnologice, administrative și umane."
+        },
+        "contactSection": {
+            "description": "Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă nativ. Închidem subiectul cât mai repede, fie cu un „Doamne ferește”, fie cu un aforism despre destin sau cu o glumă detașată. Poate că e și normal, având în vedere că se împlinesc 14 ani de la ultimul cutremur notabil care a avut loc la noi, cel din octombrie 2004, și singurul prin care a trecut generația tânără. Iar la o magnitudine de 6,0 grade acela a fost doar un simplu test al reacțiilor, înregistrându-se zero pagube.",
+            "contactUsButton": "Contactează-ne!",
+            "backgroundAlternativeText": "Îndemn la a ne contacta"
+        },
+        "supportUsSection": {
+            "title": "Cum poti ajuta?",
+            "description": "Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă nativ. Închidem subiectul cât mai repede, fie cu un „Doamne ferește”, fie cu un aforism despre destin sau cu o glumă detașată. Poate că e și normal, având în vedere că se împlinesc 14 ani de la ultimul cutremur notabil care a avut loc la noi, cel din octombrie 2004, și singurul prin care a trecut generația tânără. Iar la o magnitudine de 6,0 grade acela a fost doar un simplu test al reacțiilor, înregistrându-se zero pagube.",
+            "socialsLabel": "Și, urmărește-ne pe social media!",
+            "backgroundAlternativeText": "Animatie",
+            "contactUsButton": "Contactează-ne!",
+            "links": {
+                "supportUs": {
+                    "label": "Implică-te!",
+                    "ariaLabel": "link către pagina implică-te"
+                },
+                "join": {
+                    "label":"Devino voluntar!",
+                    "ariaLabel": "link către pagina implică-te, secțiunea devino voluntar!"
+                },
+                "donate": {
+                    "label":"Donează!",
+                    "ariaLabel": "link către pagina implică-te, secțiunea doneaza!"
+                },
+                "redirect": {
+                    "label":"Redirecționează 3.5%!",
+                    "ariaLabel": "link către pagina implică-te, secțiunea redirecționează!"
+                }
+            }
+        }
+    },
+    "socials": {
+        "email": {
+            "ariaLabel": "email de contact"
+        },
+        "instagram": {
+            "ariaLabel": "link către pagina de instagram"
+        },
+        "linkedin": {
+            "ariaLabel": "link către pagina de linkedin"
+        },
+        "facebook": {
+            "ariaLabel": "link către pagina de facebook"
+        }
+    },
+    "layout": {
+        "header": {
+            "logoAlternativeText": "Logo-ul Re:Rise",
+            "about": "Cine suntem?",
+            "projects": "Ce facem?",
+            "contact": "Contactează-ne",
+            "supportUs": "Implică-te"
+        },
+        "footer": {
+            "title": "Navighează mai ușor!",
+            "logoAlternativeText": "Logo-ul Re:Rise",
+            "links": {
+                "homepage": {
+                    "ariaLabel": "link către pagina principală"
+                },
+                "aboutPage": {
+                    "label": "Cine suntem?",
+                    "ariaLabel": "link către pagina cine suntem"
+                },
+                "projectsPage": {
+                    "label": "Ce facem?",
+                    "ariaLabel": "link către pagina ce facem"
+                },
+                "contactPage": {
+                    "label": "Contactează-ne",
+                    "ariaLabel": "link către pagina contact"
+                },
+                "supportUsPage": {
+                    "label": "Implică-te",
+                    "ariaLabel": "link către pagina implică-te"
+                },
+                "termsAndConditions": {
+                    "label": "Termeni și condiții",
+                    "ariaLabel": "link către termeni și condiții"
+                },
+                "privacyPolicy": {
+                    "label": "Politica de confidențialitate",
+                    "ariaLabel": "link către politica de condifențialitate"
+                },
+                "developersPage": {
+                    "label":  " ► here",
+                    "ariaLabel": "link către pagina dedicată dezvoltatorilor site-ului"
+                }
+            },
+            "socialsLabel": "Unde ne găsești?",
+            "copyright": "@2024 - All rights reserverd - See who designed & developed this website"
+        }
+    },
+    "notFound": {
+        "title": "Ups...",
+        "code": "404",
+        "description": "Se pare că ai ajuns într-un loc secret... dar e atât de secret, încât nici noi nu știm unde e! Nu te îngrijora, nu e vina ta. Poate că pagina pe care o cauți s-a ascuns bine, poate că s-a rătăcit prin hățișurile internetului, cine știe?",
+        "goBackButton": "Întoarce-te în siguranță!"
+    },
+    "aboutPage": {
+        "title": "Cine suntem?",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție.",
+        "member": {
+            "portraitAlternativeText": "membru al echipei Re:Rise",
+            "emailAriaLabel": "email-ul membrului",
+            "linkedinAriaLabel": "link către profilul de linkedin al membrului",
+            "instagramAriaLabel": "link către profilul de instagram al membrului",
+            "facebookAriaLabel": "link către profilul de facebook al membrului"
+        }
+    },
+    "contactPage": {
+        "title": "Contactează-ne!",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție.",
+        "contactForm":{
+            "inputLabels": {
+                "name": "Numele tău",
+                "email": "Adresa ta de e-mail",
+                "message": "Ce dorești să ne transmiți?"
+            },
+            "constraints": {
+                "messageMaximumLength": "1000 max. caractere"
+            },
+            "validationMessages": {
+                "mandatoryField": "Acest câmp este obligatoriu",
+                "invalidEmail": "Email-ul introdus nu este valid"
+            },
+            "submitButtonLabel": "Trimite",
+            "submission": {
+                "success": "Mesajul tău a fost trimis cu succes!",
+                "fail": "Ups.. A apărut o eroare!"
+            }
+        }
+    },
+    "developersPage": {
+        "title": "Dezvoltatorii site-ului",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție."
+    },
+    "privacyPolicyPage": {
+        "title": "Politica de confidențialitate",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție."
+    },
+    "termsAndConditionsPage": {
+        "title": "Termeni și condiții",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție."
+    },
+    "supportUsPage": {
+        "title": "Implică-te în Re:Rise",
+        "description": "Asociația pentru Reducerea Riscului Seismic (Re:Rise) este răspunsul oamenilor la nevoia urgentă de scădere a vulnerabilității seismice din România. Re:Rise funcționează ca o punte de legătură între persoanele expuse riscului seismic și, pe de altă parte, resursele tehnologice, financiare, administrative și umane aflate la dispoziție.",
+        "socialMediaTitle": "Urmărește-ne pe social media!",
+        "socialMediaDescription": " Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă nativ. Închidem subiectul cât mai repede, fie cu un „Doamne ferește”, fie cu un aforism despre destin sau cu o glumă detașată. Poate că e și normal, având în vedere că se împlinesc 14 ani de la ultimul cutremur notabil care a avut loc la noi, cel din octombrie 2004, și singurul prin care a trecut generația tânără. Iar la o magnitudine de 6,0 grade acela a fost doar un simplu test al reacțiilor, înregistrându-se zero pagube.",
+        "contactUsButton": "Contactează-ne!"
+    },
+    "projectsPage": {
+        "title": "Ce facem în Re:Rise?",
+        "description": "Re:Rise este o asociație care reduce vulnerabilitatea seismică în România, conectând persoanele expuse riscului cu resursele disponibile. Organizația implementează 5 soluții, inclusiv un Registru Digital al Utilajelor pentru forțele de intervenție, un Sistem de Mapare Rapidă cu Drone pentru autorități și WiFi Mesh-ul Salvatorului pentru comunicarea între salvatori și victime.",
+        "firstProject": {
+            "title": "Bucureștiul după cutremur",
+            "linksConnector": " este un proiect Re:Rise și ",
+            "description": " prin care lansăm un îndemn la pregătire și învățare, ilustrând atât amprenta clădirilor vulnerabile (RS I, U1, U2, U3, RS II), cât și aria aproximativă în caz de colaps a acestor clădiri, precum și segmentele de drum în risc de blocaj din cauza dărâmăturilor.",
+            "firstListItem": "Cum va arăta noua hartă a Bucureștiului post-seism? Care vor fi străzile blocate de dărâmături?",
+            "secondListItem": "Cum ajungem cel mai rapid la cei prinși sub dărâmături / cei care au nevoie de ajutor?",
+            "thirdListItem": "Care sunt zonele problemă și cartierele în risc de izolare de echipele de intervenție?",
+            "findOutMore": "Află mai multe",
+            "imageAlternativeText": "Un telefon deschis pe DupaCutremur.ro"
+        },
+        "secondProject": {
+            "title": "Memorialul lui Ursu",
+            "description": {
+                "unbolded1": "De profesie inginer, dar în fapt un adevărat polimat, ",
+                "bolded1": "Gheorghe Ursu este primul om care a tras un semnal de alarmă public cu privire la vulnerabilitatea seismică a Bucureștiului.",
+                "unbolded2": "Printr-o scrisoare trimisă către Radio Europa Liberă, a denunțat faptul că, după cutremurul din 1977, reparațiile au fost sistate prematur, la ordinul direct al lui Ceaușescu, ",
+                "bolded2": " lăsând populația Bucureștiului expusă în fața unui viitor cutremur. ",
+                "unbolded3": "Pentru gestul său de a spune adevărul și pentru că nu a acceptat să se dezică de spusele sale, a sfârșit torturat și, în cele din urmă,",
+                "bolded3": " ucis de securitate pe 17 noiembrie 1985."
+            },
+            "findOutMore": "Află mai multe",
+            "imageAlternativeText": "Autoportretele lui Gheorghe Ursu"
+        },
+        "thirdProject": {
+            "title": "Ordinul Criminal",
+            "description": {
+                "firstSection": "La 4 luni după cutremurul din martie 1977, Nicolae Ceaușescu convoacă o ședință urgentă în București. Pe 4 iulie, cca. 300 de persoane (ingineri, arhitecți, lideri de partid și ai administrației locale), sunt strânși într-o sală din spatele CC și li se ordonă de către Ceaușescu să sisteze toate lucrările de consolidare la clădirile afectate de cutremur.",
+                "secondSection": "Numai în Capitală, peste 10.000 de clădiri au fost lăsate astfel în vulnerabilitate.",
+                "thirdSection": "Re:Rise publică în premieră stenograma acelei ședințe și dovezile ordinului criminal."
+            },
+            "findOutMore": "Află mai multe",
+            "imageAlternativeText": "Citate din ședința plenară de pe 4 iulie 1977"
+
+        },
+        "moreOthers": "Plus multe altele!",
+        "projectsCollectionDescription": "Ne-am obișnuit să vorbim despre cutremur cu un fatalism parcă nativ",
+        "findOutMore": "Află mai multe"
+    }
+}
