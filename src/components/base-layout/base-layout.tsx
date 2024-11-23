@@ -4,6 +4,7 @@ import "@/src/app/globals.scss";
 // Utilities
 import React from "react";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat, Bitter } from "next/font/google";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
@@ -25,6 +26,9 @@ const bitter = Bitter({
    subsets: ["latin"],
    display: "swap",
 });
+
+const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID
+
 
 export const metadata: Metadata = {
    title: "Re:rise",
@@ -53,6 +57,7 @@ export default async function BaseLayout({
                <Footer />
             </NextIntlClientProvider>
          </body>
+         <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID ?? ""} />
       </html>
    );
 }

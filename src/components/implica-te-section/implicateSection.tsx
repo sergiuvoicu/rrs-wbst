@@ -14,12 +14,6 @@ import { pages } from "@/utilities/pages";
 
 // Assets
 import animation from "@/assets/800_600.gif";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-   faFacebookF,
-   faInstagram,
-   faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 import Socials from "../socials/socials";
 
 export default function ImplicateSection() {
@@ -52,6 +46,41 @@ export default function ImplicateSection() {
                >
                   <h3>{t("links.donate.label")}</h3>
                </Link>
+               <form
+                  action="https://www.paypal.com/donate"
+                  method="post"
+                  target="_top"
+               >
+                  <input
+                     type="hidden"
+                     name="business"
+                     value="donations@kcparkfriends.org"
+                  />
+                  <input type="hidden" name="no_recurring" value="0" />
+                  <input
+                     type="hidden"
+                     name="item_name"
+                     value="Friends of the Park"
+                  />
+                  <input
+                     type="hidden"
+                     name="item_number"
+                     value="Fall Cleanup Campaign"
+                  />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input
+                     type="image"
+                     name="submit"
+                     src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                     alt="Donate"
+                  />
+                  <img
+                     alt=""
+                     width="1"
+                     height="1"
+                     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                  />
+               </form>
                <Link
                   href={pages.redirect}
                   aria-label={t("links.redirect.ariaLabel")}

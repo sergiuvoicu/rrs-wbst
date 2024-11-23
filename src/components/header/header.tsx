@@ -65,7 +65,7 @@ export default function Header() {
             <Link href={pages.acasa}>
                <Image
                   src={logo}
-                  alt={t('logoAlternativeText')}
+                  alt={t("logoAlternativeText")}
                   height={scrollPosition > 40 ? 50 : 80}
                />
             </Link>

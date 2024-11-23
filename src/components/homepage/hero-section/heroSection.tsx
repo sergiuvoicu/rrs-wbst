@@ -15,13 +15,6 @@ import { Link } from "@/src/i18n/routing";
 import { useTranslations } from "next-intl";
 import { socials } from "@/utilities/socials";
 import { pages } from "@/utilities/pages";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-   faFacebookF,
-   faInstagram,
-   faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 import Socials from "../../socials/socials";
 
 export default function HeroSection() {
