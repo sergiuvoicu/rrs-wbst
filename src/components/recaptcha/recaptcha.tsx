@@ -12,7 +12,7 @@ type IReCaptchaPropsType = {
    error: string | null | false;
 };
 
-const siteKey = process.env.GOOGLE_RECAPTCHA_TOKEN
+const siteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_TOKEN
 
 const ReCaptcha = forwardRef<ReCAPTCHA, IReCaptchaPropsType>((props, ref) => {
    return (
